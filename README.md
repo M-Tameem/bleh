@@ -14,8 +14,8 @@
 ---
 
 ## Team information
-- Team name: 
-- Team members:
+- Team name: Pied Piper
+- Team members: Lynn Phung, Aban Qureshi, John Brennan, Tameen Mughcd, Jackson Young, Tiffany Villatoro, Shakira Janan Rida.
 
 ## Project management setup
 - With your assigned group, set-up a Team Project website on Trello(trello.com) to manage your project.
