@@ -15,7 +15,7 @@
 
 ## Team information
 - Team name: Pied Piper
-- Team members: Lynn Phung, Aban Qureshi, John Brennan, Muhammad Tameem Mughal, Jackson Young, Tiffany Villatoro, Shakira Janan Rida.
+- Team members: Muhammad Ali, Lynn Phung, Aban Qureshi, John Brennan, Muhammad Tameem Mughal, Jackson Young, Tiffany Villatoro, Shakira Janan Rida.
 
 ## Project management setup
 - With your assigned group, set-up a Team Project website on Trello(trello.com) to manage your project.
