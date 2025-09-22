@@ -19,5 +19,5 @@
 
 ## Project management setup
 - With your assigned group, set-up a Team Project website on Trello(trello.com) to manage your project.
-- Add a link to your Trello board here.
+- Add a link to your Trello board here: https://trello.com/invite/b/68d19d94180b4700a7fd6337/ATTI823f4c1f8d3640c9191cf73bcfadc42b0D7EF0F1/pied-piper-board
 - Share your board with the 3750 email (cis3750@socs.uoguelph.ca).
