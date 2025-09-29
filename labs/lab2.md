@@ -1,6 +1,6 @@
 # Update this file with instructions from Lab 2
 
-US1. As a Student, I want be able to ask follow up questions in the interface so that the student can refine their questioning and learning.
+US1. As a Student, I want be able to ask follow up questions in the interface so that I can refine my questioning and learning.
  
 US2. As a Student, I want to be able to specify different chat "modes" in the interface, like "assignment mode" or "concept mode" or "problem mode" so that the system can best understand what I'm trying to get out of the system.
  
