@@ -1,6 +1,7 @@
 The <user/system type> must/should <do one thing>
 
 Functional:
+
     Must:
     - The system must save progress
     - The system must resume saved progress
@@ -30,6 +31,7 @@ Functional:
 
 
 Non-functional:
+
     Must:
     - The system must quickly return feedback to the user
     - The system must provide password protection via SQL injection
@@ -42,7 +44,7 @@ Non-functional:
     Nice-to-have:
     - It would be nice for the system to include gamification
     - It would be nice for the system to offer lifelong learning support
-    
+
     Won't:
     - The system will not have to run smoothly on lower-end hardware
     - The system will not have to be deployed in underserved areas
