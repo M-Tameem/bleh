@@ -1,5 +1,10 @@
 The <user/system type> must/should <do one thing>
 
+Must: Currently at 14; need 48 total
+Should: Currently at 7; need 32 total
+Nice: Currently at 3; need 24 total
+Won't: Currently at 5; need 16 total
+
 Functional:
 
     Must:
