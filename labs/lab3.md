@@ -75,6 +75,7 @@ Path:
     3. Then user clicks a button and is taken to their chosen lesson.
 Postconditions:
     • N/A
+
 ====================================================================================================================================
 Student Completes a Practice Question
 Summary: A student answers a Python programming question and receives immediate feedback.
