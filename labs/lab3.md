@@ -1,3 +1,144 @@
+USE CASES
+====================================================================================================================================
+Terminate Program
+
+When the user exits the program when no in any learning state.
+
+Users: all
+Preconditions: 
+    • User is in any part of the program (e.g. login screen, topic screen, etc.) except tutorial/lesson/test/quiz screen.
+Path: 
+    1. User clicks x or quit program button.
+    2. Program terminates.
+Postconditions:
+    • Nothing is changed as user has done nothing that needs updating database.
+
+====================================================================================================================================
+Terminate Program in Tutorial Session
+
+When the user exits the program during a learning state.
+
+Users: all
+Preconditions: 
+    • User is in any part of the program that involves learning (e.g. lessons, quiz, tests, etc.).
+Path: 
+    1. User clicks x or quit program button.
+    2. Warn user progress if they are sure they want to exit, progress will be saved.
+    3a. If user clicks no, let user continue the session.
+    3b. If user clicks yes, save progress then terminate the program.
+Postconditions:
+    • If user clicks yes, system will save current progress so student can continue where they left off. Then terminate program.
+
+====================================================================================================================================
+Check User Progress
+
+Let the use see how much progress/understanding they have on a certain topic/chapter.
+
+Users: all
+Preconditions: 
+    • User is logged in.
+    • User has completed some lessons.
+Path: 
+    1. User is on home page and clicks progress button.
+    2. Software loads progress screen and load data to visually show user their progress from 0-100% for each topic/chapter.
+Postconditions:
+    • N/A
+
+====================================================================================================================================
+User Login
+
+Let user login into their account.
+
+Users: all
+Preconditions: 
+    • User has the software running and is on the login screen.
+    • User has a preexisting account.
+Path: 
+    1a. User enters in their username and password then hit enter.
+    1b. User clicks forget password and taken to forgotten password screen.
+    2. User is now logged into their account and can start their lessons.
+Postconditions:
+    • N/A
+
+====================================================================================================================================
+Student Choose a Lesson
+
+User can choose which lesson available to them to learn.
+
+Users: students
+Preconditions: 
+    • User is logged in.
+    • User has completed some lessons.
+Path: 
+    1. User is on home page and clicks all lessons button.
+    2. User is taken to all lessons screen and can choose from available buttons.
+    3. Then user clicks a button and is taken to their chosen lesson.
+Postconditions:
+    • N/A
+====================================================================================================================================
+Student Completes a Practice Question
+Summary: A student answers a Python programming question and receives immediate feedback.
+Actors: Student, System
+Preconditions: Student is logged in and has selected a learning module.
+Path:
+1. The student reads a Python programming question presented by the system. 
+2. The student enters their answer in a text-box or selects a multiple choice response and submits it. 
+3. The system evaluates the answer then displays correct/incorrect, and provides immediate feedback. 
+4. The system updates the student's progress and mastery level.
+Postcondition: System updates student's progress and mastery level.
+
+====================================================================================================================================
+Student Begins a New Learning Module
+Summary: A student starts learning a new Python concept
+Actors: System, Student
+Preconditions: Student is logged in.
+Path:
+1. The student selects a learning module from their dashboard. 
+2. The system presents an introduction to the concept with examples and explanations. 
+3. The system breaks down the concept into step-by-step lessons. 
+4. The student progresses through each lesson, reading content and viewing code examples. 
+5. The system tracks which lessons have been completed and updates the student's progress.
+Postcondition: System updates student's progress and mastery level.
+
+====================================================================================================================================
+System Adjusts Question Difficulty
+Summary: The ML component adapts question difficulty based on student performance.
+Actors: System, Student
+Preconditions: Student has answered at least 5 questions in the current topic.
+Path:
+1. The system's ML component analyzes the student's recent performance and tracks which skills have been mastered and which questions have been incorrectly answered most recently. 
+2. Based on the mastery model, the system selects the next question at an appropriate difficulty level. 
+3. If the student has been answering correctly, the system increases difficulty. 
+4. If the student is struggling, the system provides easier questions or reviews prerequisite concepts. 
+5. The system presents the adaptively selected question to the student.
+Postcondition: System updates student's mastery level.
+
+====================================================================================================================================
+Teacher Views Class Progress Dashboard
+Summary: A teacher monitors overall class performance and identifies struggling students.
+Actors: Teacher, System
+Preconditions: Teacher is logged in and has at least one assigned class.
+Path: 
+1. The teacher navigates to the class dashboard and selects a specific class. 
+2. The system displays an overview showing each student's progress, including topics completed, current mastery levels, and recent assessment scores. 
+3. The system highlights students who are struggling (falling behind or scoring poorly) in red or with warning indicators. 
+4. The teacher clicks on individual students to view detailed performance data. 
+5. The system provides this information to help the teacher identify who needs additional support.
+
+====================================================================================================================================
+Teacher Creates a New Question
+Summary: A teacher adds a new Python programming question to the question bank.
+Actors: Teacher, System
+Preconditions: Teacher is logged in and has content creation permissions.
+Path:
+1. The teacher navigates to the question creation interface and selects the question type (multiple choice, short answer, or code submission). 
+2. The teacher enters the question text, provides the correct answer, and adds common incorrect answers or mistake patterns. 
+3. The teacher tags the question with relevant topics and skill levels. 
+4. The teacher submits the question, and the system saves it to the question bank, making it available for assignment to students.
+Postcondition: System will update question bank for that teacher.
+====================================================================================================================================
+
+REQUIREMENTS
 The <user/system type> must/should <do one thing>
 
 Must: Currently at 65; need 48 total
