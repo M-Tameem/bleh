@@ -137,7 +137,31 @@ Path:
 3. The teacher tags the question with relevant topics and skill levels. 
 4. The teacher submits the question, and the system saves it to the question bank, making it available for assignment to students.
 Postcondition: System will update question bank for that teacher.
+
 ====================================================================================================================================
+Student asks a follow up question
+Actors: Student, System
+Summary: A student asks a follow up questions after receiving feedback or an explanation to deepen understanding of topic
+Preconditions: Student is logged in. Student has completed a question and received feedback.
+Path: 
+1. The student types a follow up question in the interface (e.g. "Can you explain that in simpler terms"). 
+2. The system analyzes the context of the original question and the students question. 
+3. The system generates a response such as clarifying the explanation that builds on the previous feedback.
+Postconditions: The system logs the student follow up question to refine the model. The student gets a deeper understanding of the concept.
+
+====================================================================================================================================
+System displays visual skill metrics
+Summary: the system displays a visual breakdown of the students performance across different categories and question types.
+Actors: Student, System
+Preconditions: Student is logged in. System has data from multiple completed questions.
+Path: 
+1. The student goes to their dashboard and opens the "Skill Progress" section. 
+2. The system displays graphs and charts that show accuracy, mastery level by concepts and error patterns. 
+3. The student can filter by question types. The visualization highlights strong areas and weak areas. 
+4. The student can click to access related lessons or more practice questions.
+Postconditions: The student gains insight into performance trends.
+
+
 
 REQUIREMENTS
 The <user/system type> must/should <do one thing>
