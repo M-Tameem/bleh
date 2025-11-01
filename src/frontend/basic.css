@@ -11,6 +11,9 @@ body {
 } form {
 	background-color: #D7FFC9;
 	padding: 20px 50px;
+} form.btn {
+	background-color: transparent;
+	padding: 20px 50px;	
 } input[type=text], select {
 	width: 200px;
 	padding: 10px;
@@ -27,7 +30,7 @@ body {
 }.mbtn {
 	background-color: #74D651;
 	border: 1px solid green;
-	padding: 10px 30px;
+	padding: 5px 10px;
 	text-align: center;
 	font-size: 16px;
 	cursor: pointer;
