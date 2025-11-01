@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Student Login</title>
+		<link rel="stylesheet" href="basic.css">
+
+        <style>
+            input[type=text], select {
+                width: 85%;
+            }
+        </style>
+	</head>
+		
+	<body>
+		<p class="title">Chat with PyP</p>
+
+        <table width="80%" height="100%" align="center">
+			<tr> <td>
+                <div class="chat" style="center; width=100%" height="100%">
+					<form action="chat.c" method="post" style="height: 400px;">
+                        <div style="bg-color: white; width: 90%; height: 90%;"><output id="output"> PyP will answer here. </output></div>
+						<input type="text" id="input" placeholder="Enter your query" >
+						<button type="submit" class="button">Enter</button>
+					</form>
+					
+					<br><button type="submit" class="button" style="float: right;">Next</button>
+                </div>
+            </td> </tr>
+        </table>
+	</body>
+</html>
