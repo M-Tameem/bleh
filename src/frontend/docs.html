@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Docs</title>
+        <link rel="icon" href="images/piedPiperLogo.png">
+		<link rel="stylesheet" href="basic.css">
+	</head>
+		
+	<body>
+		<p class="title">Docs</p>
+		<br><br>
+		<div class="content-container">
+            <div class="docs-box">
+                <div class="sm-title">A</div>
+                <div class="docs-text">
+                    <code>abs(number, /)</code><br>
+                    Return the absolute value of a number. The argument may be an integer, 
+                    a floating-point number, or an object implementing <code>__abs__()</code>. If the 
+                    argument is a complex number, its magnitude is returned.<br><br>
+
+                    <code>aiter(async_iterable, /)</code><br>
+                    Return an asynchronous iterator for an asynchronous iterable. Equivalent 
+                    to calling <code>x.__aiter__()</code>.<br><br>
+
+                    <code>all(iterable, /)</code><br>
+                    Return True if all elements of the iterable are true (or if the iterable is empty). 
+                    Equivalent to:
+
+                    <pre><code>
+                    def all(iterable):
+                        for element in iterable:
+                            if not element:
+                                return False
+                        return True 
+                    </code></pre>
+
+                    <code>awaitable anext(async_iterator, /)</code><br>
+                    <code>awaitable anext(async_iterator, default, /)</code><br>
+                    When awaited, return the next item from the given asynchronous iterator, or 
+                    default if given and the iterator is exhausted.<br>
+                    This is the async variant of the <code>next()</code> builtin, and behaves similarly.<br>
+                    This calls the <code>__anext__()</code> method of async_iterator, returning an awaitable. 
+                    Awaiting this returns the next value of the iterator. If default is given, it is 
+                    returned if the iterator is exhausted, otherwise StopAsyncIteration is raised.<br><br>
+                    
+                    <code>any(iterable, /)</code><br>
+                    Return True if any element of the iterable is true. If the iterable is empty, return False. 
+                    Equivalent to:
+
+                    <pre><code>
+                    def any(iterable):
+                        for element in iterable:
+                            if element:
+                                return True
+                        return False
+                    </code></pre>
+
+                    <code>ascii(object, /)</code><br>
+                    As <code>repr()</code>, return a string containing a printable representation of an object, but escape 
+                    the non-ASCII characters in the string returned by <code>repr()</code> using \x, \u, or \U escapes. This 
+                    generates a string similar to that returned by <code>repr()</code> in Python 2.<br><br>
+                <div class="sm-title">B</div>
+                </div>
+            </div>
+		</div>
+        <a href="StudentMenu.html" class="back-button">← Back</a>
+	</body>
+</html>

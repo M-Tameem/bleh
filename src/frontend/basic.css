@@ -104,10 +104,34 @@ p.body {
   left: 20px;
   background-color: #74D651;
   border: 1px solid green;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   font-size: 16px;
   font-family: var(--font-family-inter);
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.sm-title {
+    font-family: var(--font-family-inter);
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.docs-text {
+    font-family: var(--font-family-inter);
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 10px auto 20px auto;
+    text-align: left;
+}
+
+.docs-box {
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
