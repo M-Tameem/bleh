@@ -24,4 +24,14 @@ body {
 	font-size: 16px;
 	cursor: pointer;
 	font-family: var(--font-family-inter);
+}.mbtn {
+	background-color: #74D651;
+	border: 1px solid green;
+	padding: 10px 30px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	font-family: var(--font-family-inter);
+	width: 200px;
+	height: 50px;
 }
