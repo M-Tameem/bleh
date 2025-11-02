@@ -4,12 +4,12 @@ import json
 questions_bp = Blueprint('questions', __name__)
 
 def get_user_progress(user_id):
-    with open('src/backend/data/user_progress.json') as f:
+    with open('data/user_progress.json') as f:
         progress = json.load(f)
     return progress.get(user_id, {})
 
 def update_user_progress(user_id, course_id, chapter_id, new_progress):
-    with open('src/backend/data/user_progress.json', 'r+') as f:
+    with open('data/user_progress.json', 'r+') as f:
         progress_data = json.load(f)
         if user_id not in progress_data:
             progress_data[user_id] = {}
@@ -26,11 +26,9 @@ def get_question(course_id, chapter_id):
         return jsonify({'error': 'Not logged in'}), 401
 
     user_id = session['user']
-    user_progress = get_user_progress(user_id)
-    
     current_question_index = user_progress.get(course_id, {}).get(chapter_id, 0)
 
-    with open('src/backend/data/questions.json') as f:
+    with open('data/questions.json') as f:
         all_questions = json.load(f)
 
     course_questions = all_questions.get(course_id, {})

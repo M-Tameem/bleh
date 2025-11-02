@@ -29,7 +29,7 @@ function Lesson() {
             <tr key={chapter.id}>
               <td>
                 <p className="body">{chapter.name}</p>
-                <button className="button" onClick={() => navigate(`/quiz/${courseId}/${chapter.id}`)}>Take Quiz</button>
+                <button className="button quiz-button" onClick={() => navigate(`/quiz/${courseId}/${chapter.id}`)}>Take Quiz</button>
               </td>
             </tr>
           ))}

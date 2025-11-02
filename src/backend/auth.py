@@ -9,7 +9,7 @@ def login():
     username = data.get('username')
     password = data.get('password')
 
-    with open('src/backend/data/users.json') as f:
+    with open('data/users.json') as f:
         users = json.load(f)
 
     user = users.get(username)
