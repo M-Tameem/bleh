@@ -5,7 +5,7 @@ chapters_bp = Blueprint('chapters', __name__)
 
 @chapters_bp.route('/courses/<course_id>/chapters', methods=['GET'])
 def get_chapters(course_id):
-    with open('src/backend/data/chapters.json') as f:
+    with open('data/chapters.json') as f:
         all_chapters = json.load(f)
     
     chapters = all_chapters.get(course_id)

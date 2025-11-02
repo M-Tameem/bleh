@@ -16,7 +16,7 @@ def student_profile(student_id):
     elif role != 'teacher':
         return jsonify({'error': 'Forbidden'}), 403
 
-    with open('src/backend/data/students.json') as f:
+    with open('data/students.json') as f:
         students_data = json.load(f)
 
     student = students_data.get(student_id)

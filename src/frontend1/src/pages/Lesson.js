@@ -1,26 +1,41 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import api from '../services/api';
 
 function Lesson() {
   const navigate = useNavigate();
-  
+  const { courseId } = useParams();
+  const [chapters, setChapters] = useState([]);
+
+  useEffect(() => {
+    async function fetchChapters() {
+      try {
+        const fetchedChapters = await api.get(`/courses/${courseId}/chapters`);
+        setChapters(fetchedChapters);
+      } catch (error) {
+        console.error('Failed to fetch chapters:', error);
+      }
+    }
+    fetchChapters();
+  }, [courseId]);
+
   return (
     <div>
-      <p className="title">Print Function</p>
+      <p className="title">Chapters</p>
        
       <table cellPadding="0" className="lesson" width="80%" height="90%" align="center" style={{backgroundColor: 'white'}}>
         <tbody>
-        <tr><td width="20%">
-          <p className="body"><span style={{color: 'blue'}}>print()</span> is a function that is used to print anything from 
-            letters to sentences.</p>
-        </td></tr>
+          {chapters.map(chapter => (
+            <tr key={chapter.id}>
+              <td>
+                <p className="body">{chapter.name}</p>
+                <button className="button quiz-button" onClick={() => navigate(`/quiz/${courseId}/${chapter.id}`)}>Take Quiz</button>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
       <br/>
-      <center>
-        <button className="button" onClick={() => navigate('/quiz')}>Take Quiz</button>
-        <button className="button" onClick={() => navigate('/chat')} style={{marginLeft: '20px'}}>Ask PyP</button>
-      </center>
       <a href="#" onClick={() => navigate('/menu')} className="back-button">← Back</a>
     </div>
   );

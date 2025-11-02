@@ -23,7 +23,9 @@ function App() {
         <Route path="/chat" element={<ChatPy />} />
         <Route path="/docs" element={<Docs />} />
         <Route path="/lesson" element={<Lesson />} />
+        <Route path="/course/:courseId" element={<Lesson />} />
         <Route path="/quiz" element={<Quiz />} />
+        <Route path="/quiz/:courseId/:chapterId" element={<Quiz />} />
         <Route path="/progress" element={<SkillProgress />} />
       </Routes>
     </Router>
