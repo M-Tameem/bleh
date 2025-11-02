@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import api from '../services/api';
 
 function StudentMenu() {
   const navigate = useNavigate();
-  
-  function goToLessons(e) {
-    e.preventDefault();
-    navigate('/lesson');
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    async function fetchCourses() {
+      try {
+        const fetchedCourses = await api.get('/courses');
+        setCourses(fetchedCourses);
+      } catch (error) {
+        console.error('Failed to fetch courses:', error);
+      }
+    }
+    fetchCourses();
+  }, []);
+
+  function goToCourse(courseId) {
+    navigate(`/course/${courseId}`);
   }
   
   function goToProgress(e) {
@@ -19,9 +32,14 @@ function StudentMenu() {
     navigate('/docs');
   }
   
-  function logout(e) {
+  async function logout(e) {
     e.preventDefault();
-    navigate('/login');
+    try {
+      await api.get('/logout');
+      navigate('/login');
+    } catch (error) {
+      console.error('Logout failed:', error);
+    }
   }
   
   return (
@@ -32,8 +50,9 @@ function StudentMenu() {
         <br/> <br/> <br/> <br/> <br/>
         <tr> <td> 
           <div style={{center: true, width: '100%', textAlign: 'center'}}>
-            <form action="/api/lessons" className="btn" onSubmit={goToLessons}>
-              <button type="submit" className="mbtn">All Lessons</button></form>
+            {courses.map(course => (
+              <button key={course.id} onClick={() => goToCourse(course.id)} className="mbtn">{course.name}</button>
+            ))}
             <form action="/api/progress" className="btn" onSubmit={goToProgress}>
               <button type="submit" className="mbtn">Skill Progress</button></form>
             <form action="/api/docs" className="btn" onSubmit={goToDocs}>

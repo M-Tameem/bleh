@@ -1,5 +1,4 @@
 from flask import Blueprint, request, session, jsonify
-from werkzeug.security import check_password_hash
 import json
 
 auth_bp = Blueprint('auth', __name__)
@@ -15,7 +14,7 @@ def login():
 
     user = users.get(username)
 
-    if user and check_password_hash(user['password'], password):
+    if user and user['password'] == password:
         session['user'] = username
         session['role'] = user['role']
         if user['role'] == 'student':
