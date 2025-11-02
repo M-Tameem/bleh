@@ -1,0 +1,38 @@
+{
+    "math101": {
+        "ch1": [
+            {
+                "id": "q1",
+                "question": "What is the output of `print('Hello, World!')`?",
+                "options": [
+                    "Hello, World!",
+                    "'Hello, World!'",
+                    "Error"
+                ],
+                "answer": "Hello, World!"
+            },
+            {
+                "id": "q2",
+                "question": "Which of the following is a valid variable name in Python?",
+                "options": [
+                    "1var",
+                    "my-var",
+                    "my_var"
+                ],
+                "answer": "my_var"
+            }
+        ],
+        "ch2": [
+            {
+                "id": "q1",
+                "question": "What is the value of x after `x = 5`?",
+                "options": [
+                    "5",
+                    "x",
+                    "Error"
+                ],
+                "answer": "5"
+            }
+        ]
+    }
+}

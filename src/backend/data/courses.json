@@ -1,0 +1,12 @@
+[
+    {
+        "id": "math101",
+        "title": "Introduction to Algebra",
+        "description": "Learn the basics of algebra."
+    },
+    {
+        "id": "phy101",
+        "title": "Introduction to Physics",
+        "description": "Learn the basics of physics."
+    }
+]

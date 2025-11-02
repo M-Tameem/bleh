@@ -1,0 +1,11 @@
+{
+    "student1": {
+        "password": "scrypt:32768:8:1$PdX3WXxdLr86H57T$830a3b9282f08ca76976925ddcdebdb1bf473e05e9f3308f19c6a1f1de54d59e7759d85563ec54d3a98829aee82ad0425a38cbacf48efeef917703b891cbc0ba",
+        "role": "student",
+        "student_id": "1"
+    },
+    "teacher1": {
+        "password": "scrypt:32768:8:1$FQVJEQVMGbpNku9E$08cf28b8bfe02c30ab30c63052f6206f39763f3e7368d96134cdffd66cd1ffe71157be3f4e3165aced97327b6c7178458e2514fb2184fcd7ec9f7943e5f216b6",
+        "role": "teacher"
+    }
+}
