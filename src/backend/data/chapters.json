@@ -1,18 +1,12 @@
 {
-    "math101": [
+    "python101": [
         {
             "id": "ch1",
-            "title": "Chapter 1: Basic Operations"
+            "title": "Chapter 1: Print Statements"
         },
         {
             "id": "ch2",
-            "title": "Chapter 2: Linear Equations"
-        }
-    ],
-    "phy101": [
-        {
-            "id": "ch1",
-            "title": "Chapter 1: Kinematics"
+            "title": "Chapter 2: For Loops"
         }
     ]
 }

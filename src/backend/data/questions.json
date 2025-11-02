@@ -1,5 +1,5 @@
 {
-    "math101": {
+    "python101": {
         "ch1": [
             {
                 "id": "q1",
@@ -13,25 +13,25 @@
             },
             {
                 "id": "q2",
-                "question": "Which of the following is a valid variable name in Python?",
+                "question": "How do you print a variable named 'my_variable'?",
                 "options": [
-                    "1var",
-                    "my-var",
-                    "my_var"
+                    "print(my_variable)",
+                    "print('my_variable')",
+                    "print(variable)"
                 ],
-                "answer": "my_var"
+                "answer": "print(my_variable)"
             }
         ],
         "ch2": [
             {
                 "id": "q1",
-                "question": "What is the value of x after `x = 5`?",
+                "question": "What is the output of `for i in range(3): print(i)`?",
                 "options": [
-                    "5",
-                    "x",
-                    "Error"
+                    "0\n1\n2",
+                    "1\n2\n3",
+                    "0, 1, 2"
                 ],
-                "answer": "5"
+                "answer": "0\n1\n2"
             }
         ]
     }
