@@ -52,7 +52,7 @@ function StudentMenu() {
       <p className="title">Learn with Py Piper</p>
       
       <td width="20%"> <table cellPadding="0" width="400px" height="90%" align="center"> 
-        <br/> <br/> <br/> <br/> <br/>
+        <br/> <br/> <br/> <br/>
         <tr> <td> 
           <div style={{center: true, width: '100%', textAlign: 'center'}}>
               {courses.map(course => (
