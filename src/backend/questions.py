@@ -73,3 +73,12 @@ def submit_answer(course_id, chapter_id):
         return jsonify({'feedback': 'Correct!'})
     else:
         return jsonify({'feedback': 'Incorrect, please try again.'})
+
+@questions_bp.route('/courses/<course_id>/chapters/<chapter_id>/reset_progress', methods=['POST'])
+def reset_progress(course_id, chapter_id):
+    if 'user' not in session:
+        return jsonify({'error': 'Not logged in'}), 401
+
+    user_id = session['user']
+    update_user_progress(user_id, course_id, chapter_id, 0)
+    return jsonify({'message': 'Progress reset successfully'})

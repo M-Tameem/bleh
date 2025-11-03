@@ -7,6 +7,16 @@ function Chapter() {
   const { courseId, chapterId } = useParams();
   const [chapter, setChapter] = useState(null);
 
+  async function resetProgress(courseId, chapterId) {
+    try {
+      await api.post(`/courses/${courseId}/chapters/${chapterId}/reset_progress`);
+      alert('Progress for this chapter has been reset.');
+    } catch (error) {
+      console.error('Failed to reset progress:', error);
+      alert('Failed to reset progress.');
+    }
+  }
+
   useEffect(() => {
     if (!courseId || !chapterId) {
       navigate('/menu');
@@ -47,6 +57,7 @@ function Chapter() {
             <td>
               <p className="body">{chapter.content}</p>
               <button className="button quiz-button" onClick={() => navigate(`/quiz/${courseId}/${chapterId}`)}>Take Quiz</button>
+              <button className="button" onClick={() => resetProgress(courseId, chapterId)}>Reset Progress</button>
             </td>
           </tr>
         </tbody>
