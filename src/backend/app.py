@@ -23,4 +23,5 @@ app.register_blueprint(chapters_bp)
 app.register_blueprint(questions_bp)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="localhost", port=5001, debug=True)
+

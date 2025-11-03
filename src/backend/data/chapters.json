@@ -2,11 +2,14 @@
     "python101": [
         {
             "id": "ch1",
-            "name": "Chapter 1: Print Statements"
+            "name": "Chapter 1: Print Statements",
+            "content": "Learn how to display information in Python using the print function, format output, and combine text with values."
+
         },
         {
             "id": "ch2",
-            "name": "Chapter 2: For Loops"
+            "name": "Chapter 2: For Loops",
+            "content": "Understand how to repeat work with for loops, iterate over sequences, and use range() to control loop counts."
         }
     ]
 }
