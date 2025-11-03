@@ -10,7 +10,7 @@ from chapters import chapters_bp
 from questions import questions_bp
 
 app = Flask(__name__)
-CORS(app)  # This will allow requests even from cringe JS apps(ew JS)
+CORS(app, supports_credentials=True)  # This will allow requests even from cringe JS apps(ew JS)
 app.config['SECRET_KEY'] = 'mrbombasticfullyfantastic'  
 
 app.register_blueprint(home_bp)

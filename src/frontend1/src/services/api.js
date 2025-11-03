@@ -24,6 +24,7 @@ class ApiClient {
         ...defaultHeaders,
         ...options.headers,
       },
+      credentials: 'include',
     };
 
     if (config.enableLogging) {

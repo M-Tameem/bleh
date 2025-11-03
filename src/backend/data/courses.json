@@ -1,7 +1,7 @@
 [
     {
         "id": "python101",
-        "title": "Introduction to Python",
+        "name": "Introduction to Python",
         "description": "Learn the basics of Python programming."
     }
 ]

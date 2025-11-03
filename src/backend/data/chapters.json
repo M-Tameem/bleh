@@ -2,11 +2,11 @@
     "python101": [
         {
             "id": "ch1",
-            "title": "Chapter 1: Print Statements"
+            "name": "Chapter 1: Print Statements"
         },
         {
             "id": "ch2",
-            "title": "Chapter 2: For Loops"
+            "name": "Chapter 2: For Loops"
         }
     ]
 }

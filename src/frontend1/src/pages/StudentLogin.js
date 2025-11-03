@@ -6,7 +6,7 @@ function StudentLogin() {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  
+
   async function handleLogin(e) {
     e.preventDefault();
     try {
@@ -16,30 +16,43 @@ function StudentLogin() {
       alert('Login failed. Please check your credentials.');
     }
   }
-  
+
   return (
-    <div>
-      <p className="title">Student Login</p>
-      
-      <td width="20%"> <table cellPadding="0" width="400px" height="100%" align="center"> 
-        <br/> <br/> <br/> <br/> <br/>
-        <tr> <td> 
-          <div style={{center: true, width: '100%'}}>
-            <form onSubmit={handleLogin} style={{height: '165px'}}>
-              Username: <input type="text" id="usr" onChange={(e) => setUsername(e.target.value)}/>
-              <br/> <br/>
-              Password: <input type="password" id="pwd" onChange={(e) => setPassword(e.target.value)}/>
-              <br/> <br/> <br/>
-              <button id="login" type="submit" className="button" style={{float: 'right'}}>Login</button>
-            </form>
-            <br/>
-            <div>
-              <Link to="/create-account">Create Account</Link> | 
-              <Link to="/forgot-password">Forgot Password?</Link>
-            </div>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '5rem' }}>
+      <div style={{ width: '400px', textAlign: 'center' }}>
+        <p className="title">Student Login</p>
+
+        <form onSubmit={handleLogin} style={{ marginTop: '2rem' }}>
+          <div style={{ marginBottom: '1rem' }}>
+            <label htmlFor="usr">Username:</label><br />
+            <input
+              type="text"
+              id="usr"
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
           </div>
-        </td> </tr>
-      </table> </td>
+
+          <div style={{ marginBottom: '1rem' }}>
+            <label htmlFor="pwd">Password:</label><br />
+            <input
+              type="password"
+              id="pwd"
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+
+          <button type="submit" className="button" style={{ float: 'right' }}>
+            Login
+          </button>
+        </form>
+
+        <div style={{ marginTop: '2rem' }}>
+          <Link to="/create-account">Create Account</Link> |{' '}
+          <Link to="/forgot-password">Forgot Password?</Link>
+        </div>
+      </div>
     </div>
   );
 }
