@@ -55,17 +55,15 @@ function StudentMenu() {
         <br/> <br/> <br/> <br/> <br/>
         <tr> <td> 
           <div style={{center: true, width: '100%', textAlign: 'center'}}>
-            {courses.map(course => (
-              <button key={course.id} onClick={() => goToCourse(course.id)} className="mbtn">{course.name}</button>
-            ))}
-            <form action="/api/progress" className="btn" onSubmit={goToProgress}>
-              <button type="submit" className="mbtn">Skill Progress</button></form>
-            <form action="/api/docs" className="btn" onSubmit={goToDocs}>
-              <button type="submit" className="mbtn">Docs</button></form>
-            <form action="/chat" className="btn" onSubmit={goToChat}>
-              <button type="submit" className="mbtn">Chat</button></form>
-            <form action="/api/logout" className="btn" onSubmit={logout}>
-              <button type="submit" className="mbtn">Exit</button></form>
+              {courses.map(course => (
+                <button key={course.id} onClick={() => goToCourse(course.id)} className="mbtn">
+                  {course.name}
+                </button>
+              ))}
+              <button onClick={goToProgress} className="mbtn">Skill Progress</button>
+              <button onClick={goToChat} className="mbtn">Chat with PyP</button>
+              <button onClick={goToDocs} className="mbtn">Docs</button>
+              <button onClick={logout} className="mbtn">Exit</button>
           </div>
         </td> </tr>
       </table> </td>
