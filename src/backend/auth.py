@@ -27,3 +27,39 @@ def login():
 def logout():
     session.clear()
     return jsonify({'message': 'Logout successful'})
+
+
+# edit page for this later 
+@auth_bp.route('/api/forgotPassword', methods=['POST'])
+def forgot_password():
+    username = request.form.get('fullname')
+
+    with open('data/users.json') as f:
+        users = json.load(f)
+
+    user = users.get(username)
+
+    if user:
+        return jsonify({'message': 'Password reset process started.'})
+    else:
+        return jsonify({'message': 'If that account exists, a password reset has been initiated.'})
+
+# also edit page for this
+@auth_bp.route('/api/resetPassword', methods=['POST'])
+def reset_password():
+    data = request.get_json()
+    username = data.get('username')
+    new_password = data.get('newPassword')
+
+    with open('data/users.json') as f:
+        users = json.load(f)
+
+    user = users.get(username)
+
+    if user:
+        user['password'] = new_password
+        with open('data/users.json', 'w') as f:
+            json.dump(users, f, indent=4)
+        return jsonify({'message': 'Password reset successful.'})
+    else:
+        return jsonify({'message': 'If that account exists, the password has been reset.'})
