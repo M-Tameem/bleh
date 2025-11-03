@@ -21,6 +21,7 @@ function App() {
         <Route path="/create-account" element={<CreateAccount />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/chat" element={<ChatPy />} />
+        <Route path="/chat/:courseId/:chapterId" element={<ChatPy />} />
         <Route path="/docs" element={<Docs />} />
         <Route path="/lesson" element={<Lesson />} />
         <Route path="/course/:courseId" element={<Lesson />} />

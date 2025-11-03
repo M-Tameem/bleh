@@ -31,6 +31,11 @@ function StudentMenu() {
     e.preventDefault();
     navigate('/docs');
   }
+
+  function goToChat(e) {
+    e.preventDefault();
+    navigate('/chat');
+  }
   
   async function logout(e) {
     e.preventDefault();
@@ -57,6 +62,8 @@ function StudentMenu() {
               <button type="submit" className="mbtn">Skill Progress</button></form>
             <form action="/api/docs" className="btn" onSubmit={goToDocs}>
               <button type="submit" className="mbtn">Docs</button></form>
+            <form action="/chat" className="btn" onSubmit={goToChat}>
+              <button type="submit" className="mbtn">Chat</button></form>
             <form action="/api/logout" className="btn" onSubmit={logout}>
               <button type="submit" className="mbtn">Exit</button></form>
           </div>

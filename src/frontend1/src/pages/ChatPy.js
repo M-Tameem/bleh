@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+
 
 function ChatPy() {
   const navigate = useNavigate();
+  const { courseId, chapterId } = useParams();
   var [output, setOutput] = useState('PyP will answer here.');
   var [input, setInput] = useState('');
+
   
   function handleSubmit(e) {
     e.preventDefault();
@@ -18,8 +22,13 @@ function ChatPy() {
       });
   }
   
-  function nextQuestion() {
-    navigate('/quiz');
+
+  function goBackToQuiz() {
+    if (courseId && chapterId) {
+      navigate(`/quiz/${courseId}/${chapterId}`);
+    } else {
+      navigate('/menu');
+   }
   }
   
   return (
@@ -36,7 +45,11 @@ function ChatPy() {
               <button id="enter" type="submit" className="button">Enter</button>
             </form>
             
-            <br/><button id="next" onClick={nextQuestion} className="button" style={{float: 'right'}}>Next</button>
+              {courseId && chapterId && (
+                <><br/>
+                              <button id="next" onClick={goBackToQuiz} className="button" style={{float: 'right'}}>Back to Quiz</button>
+              </>
+            )}
           </div>
         </td> </tr>
         </tbody>
