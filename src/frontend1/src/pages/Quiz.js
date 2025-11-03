@@ -70,7 +70,7 @@ function Quiz() {
         <tbody>
         <tr><td width="20%">
           <p className="body">{question.question || question.text}</p>
-          <input type="text" id="ans" placeholder="Enter your answer here" style={{marginLeft: '50px', width: '80%'}} value={answer} onChange={(e) => setAnswer(e.target.value)}/>
+          <textarea id="ans" placeholder="Enter your answer here" style={{marginLeft: '50px', width: '80%', height: '100px'}} value={answer} onChange={(e) => setAnswer(e.target.value)}/>
           <button id="enter" onClick={checkAnswer} className="button">Enter</button>
           {feedback && <p>{feedback}</p>}
           <button onClick={goToChat} className="button" style={{marginLeft: '50px'}}>Chat about this Quiz</button>
