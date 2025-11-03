@@ -22,7 +22,7 @@ function ForgotPassword() {
             <td height="30px" style={{borderRadius: '5px 5px 0 0'}}> 
               <div className="Login" style={{textAlign: 'center', width: '100%'}}>
                 <form action="/api/forgotPassword" method="post" onSubmit={handleSubmit}>
-                  <label htmlFor="email">Email:</label>
+                  <label htmlFor="email">Email: </label>
                   <input type="text" id="fullname" name="fullname" required onChange={e => email = e.target.value}/><br/><br/>
 
                   <button type="submit" className="button">Submit</button>
