@@ -13,9 +13,10 @@ import SkillProgress from './pages/SkillProgress';
 import TeacherLogin from './pages/TeacherLogin';
 import TeacherDashboard from './pages/TeacherDashboard';
 import Class from './pages/Class';
+import Chapter from './pages/Chapter';
 
-import NavBar from './NavBar';
-import ShowNavBar from './ShowNavBar';
+import NavBar from './components/NavBar';
+import ShowNavBar from './components/ShowNavBar';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/teacher-login" element={<TeacherLogin />} />
         <Route path="/teacher-dashboard" element={<TeacherDashboard />} />
         <Route path="/class" element={<Class />} />
+        <Route path="/course/:courseId/chapter/:chapterId" element={<Chapter />} />
       </Routes>
     </Router>
   );

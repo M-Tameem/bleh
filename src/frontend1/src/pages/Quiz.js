@@ -18,6 +18,10 @@ function Quiz() {
   }
 
   async function fetchQuestion() {
+    if (!courseId || !chapterId) {
+      navigate('/menu');
+      return;
+    }
     try {
       const fetchedQuestion = await api.get(`/courses/${courseId}/chapters/${chapterId}/question`);
       if (fetchedQuestion.message) {
@@ -25,9 +29,11 @@ function Quiz() {
         navigate(`/course/${courseId}`);
       } else {
         setQuestion(fetchedQuestion);
+        setFeedback('');
       }
     } catch (error) {
       console.error('Failed to fetch question:', error);
+      navigate('/menu');
     }
   }
 
@@ -36,6 +42,10 @@ function Quiz() {
   }, [courseId, chapterId]);
 
   async function checkAnswer() {
+    if (!courseId || !chapterId) {
+      navigate('/menu');
+      return;
+    }
     try {
       const response = await api.post(`/courses/${courseId}/chapters/${chapterId}/question`, { answer });
       setFeedback(response.feedback);
@@ -59,7 +69,7 @@ function Quiz() {
       <table cellPadding="20px" className="lesson" width="80%" height="90%" align="center" style={{backgroundColor: '#D7FFC9'}}>
         <tbody>
         <tr><td width="20%">
-          <p className="body">{question.text}</p>
+          <p className="body">{question.question || question.text}</p>
           <input type="text" id="ans" placeholder="Enter your answer here" style={{marginLeft: '50px', width: '80%'}} value={answer} onChange={(e) => setAnswer(e.target.value)}/>
           <button id="enter" onClick={checkAnswer} className="button">Enter</button>
           {feedback && <p>{feedback}</p>}
@@ -67,7 +77,7 @@ function Quiz() {
         </td></tr>
         </tbody>
       </table>
-      <a href="#" onClick={() => navigate(`/course/${courseId}`)} className="back-button">← Back</a>	
+      <a href="#" onClick={() => navigate(`/course/${courseId}/chapter/${chapterId}`)} className="back-button">← Back</a>
     </div>
   );
 }

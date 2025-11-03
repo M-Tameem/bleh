@@ -6,18 +6,29 @@ function Lesson() {
   const navigate = useNavigate();
   const { courseId } = useParams();
   const [chapters, setChapters] = useState([]);
+  const [selectedChapter, setSelectedChapter] = useState(null);
 
   useEffect(() => {
+    if (!courseId) {
+      navigate('/menu');
+      return;
+    }
     async function fetchChapters() {
       try {
         const fetchedChapters = await api.get(`/courses/${courseId}/chapters`);
         setChapters(fetchedChapters);
+        setSelectedChapter(fetchedChapters[0] || null);
       } catch (error) {
         console.error('Failed to fetch chapters:', error);
+        navigate('/menu'); // i guess thisis a clean redirect
       }
     }
     fetchChapters();
-  }, [courseId]);
+  }, [courseId, navigate]);
+
+  function viewLesson(chapterId) {
+    navigate(`/course/${courseId}/chapter/${chapterId}`);
+  }
 
   return (
     <div>
@@ -29,7 +40,7 @@ function Lesson() {
             <tr key={chapter.id}>
               <td style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                 <p className="body">{chapter.name}</p>
-                <button className="button quiz-button" onClick={() => navigate(`/quiz/${courseId}/${chapter.id}`)}>Take Quiz</button>
+                <button className="button" onClick={() => viewLesson(chapter.id)}>View Lesson</button>
               </td>
             </tr>
           ))}
