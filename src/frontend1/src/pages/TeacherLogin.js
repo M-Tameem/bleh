@@ -19,8 +19,8 @@ function StudentLogin() {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '5rem' }}>
-      <div style={{ width: '400px', textAlign: 'center' }}>
-        <p className="title">Student Login</p>
+      <div style={{ width: '500px', textAlign: 'center' }}>
+        <p className="title">Teacher Login</p>
 
         <form onSubmit={handleLogin} style={{ marginTop: '2rem' }}>
           <div style={{ marginBottom: '1rem' }}>
@@ -36,25 +36,24 @@ function StudentLogin() {
           <div style={{ marginBottom: '1rem' }}>
             <label htmlFor="pwd">Password:</label><br />
             <input
-              type="text"
+              type="password"
               id="pwd"
               onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
 
-          <button type="submit" className="button">
-            Login
-          </button>
+            {/* DOESN'T CHECK LOGIN, NEEDS TO BE REFACTORED */}
+          <form action="/teacher-dashboard">
+            <button type="submit" className="button" style={{ float: 'right' }}>
+                Login
+            </button>
+          </form>
         </form>
 
         <div style={{ marginTop: '2rem' }}>
-          <Link to="/create-account">Create Account</Link> |{' '}
+          <Link to="/login">Student Login</Link> |{' '}
           <Link to="/forgot-password">Forgot Password?</Link>
-        </div>
-
-        <div>
-          <Link to="/teacher-login">Teacher Login</Link>
         </div>
       </div>
     </div>
