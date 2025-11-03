@@ -27,7 +27,7 @@ function Lesson() {
         <tbody>
           {chapters.map(chapter => (
             <tr key={chapter.id}>
-              <td>
+              <td style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                 <p className="body">{chapter.name}</p>
                 <button className="button quiz-button" onClick={() => navigate(`/quiz/${courseId}/${chapter.id}`)}>Take Quiz</button>
               </td>
