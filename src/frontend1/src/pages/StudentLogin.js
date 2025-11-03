@@ -36,14 +36,14 @@ function StudentLogin() {
           <div style={{ marginBottom: '1rem' }}>
             <label htmlFor="pwd">Password:</label><br />
             <input
-              type="password"
+              type="text"
               id="pwd"
               onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
 
-          <button type="submit" className="button" style={{ float: 'right' }}>
+          <button type="submit" className="button">
             Login
           </button>
         </form>
