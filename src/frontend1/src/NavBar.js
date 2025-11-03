@@ -10,6 +10,7 @@ const NavBar = () => {
                     <a href="/menu" className="nav-btn"> Home</a>
                     <a href="/lesson" className="nav-btn"> Lessons</a>
                     <a href="/progress" className="nav-btn"> Progress</a>
+                    <a href="/chat/:courseId/:chapterId" className="nav-btn"> Chat PyP</a>
                     <a href="/docs" className="nav-btn"> Docs</a>
                 </div>
             </table>
