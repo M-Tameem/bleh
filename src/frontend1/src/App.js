@@ -11,9 +11,16 @@ import Lesson from './pages/Lesson';
 import Quiz from './pages/Quiz';
 import SkillProgress from './pages/SkillProgress';
 
+import NavBar from './NavBar';
+import ShowNavBar from './ShowNavBar';
+
 function App() {
   return (
     <Router>
+      <ShowNavBar>
+        <NavBar />
+      </ShowNavBar>
+
       <Routes>
         <Route path="/" element={<StudentLogin />} />
         <Route path="/login" element={<StudentLogin />} />
