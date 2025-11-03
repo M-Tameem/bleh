@@ -41,7 +41,7 @@ function ChatPy() {
             <form action="/api/chat" method="post" onSubmit={handleSubmit} style={{height: '400px'}}>
               <div style={{backgroundColor: 'white', width: '90%', height: '90%'}}><output id="output"> {output} </output></div>
               <input type="text" id="input" placeholder="Enter your query" style={{width: '85%'}} value={input} onChange={(e) => setInput(e.target.value)}/>
-              <button id="enter" type="submit" className="button">Enter</button>
+              <button id="enter" type="submit" className="button" style={{marginLeft: '10px', marginTop: '10px'}}>Enter</button>
             </form>
             
               {courseId && chapterId && (
