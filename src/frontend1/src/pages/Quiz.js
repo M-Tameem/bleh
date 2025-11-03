@@ -9,6 +9,14 @@ function Quiz() {
   const [answer, setAnswer] = useState('');
   const [feedback, setFeedback] = useState('');
 
+  function goToChat() {
+    if (courseId && chapterId) {
+      navigate(`/chat/${courseId}/${chapterId}`);
+    } else {
+      navigate('/chat');
+    }
+  }
+
   async function fetchQuestion() {
     try {
       const fetchedQuestion = await api.get(`/courses/${courseId}/chapters/${chapterId}/question`);
@@ -55,6 +63,7 @@ function Quiz() {
           <input type="text" id="ans" placeholder="Enter your answer here" style={{marginLeft: '50px', width: '80%'}} value={answer} onChange={(e) => setAnswer(e.target.value)}/>
           <button id="enter" onClick={checkAnswer} className="button">Enter</button>
           {feedback && <p>{feedback}</p>}
+          <button onClick={goToChat} className="button" style={{marginLeft: '50px'}}>Chat about this Quiz</button>
         </td></tr>
         </tbody>
       </table>

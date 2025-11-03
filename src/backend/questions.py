@@ -26,6 +26,7 @@ def get_question(course_id, chapter_id):
         return jsonify({'error': 'Not logged in'}), 401
 
     user_id = session['user']
+    user_progress = get_user_progress(user_id)
     current_question_index = user_progress.get(course_id, {}).get(chapter_id, 0)
 
     with open('data/questions.json') as f:
@@ -56,7 +57,7 @@ def submit_answer(course_id, chapter_id):
     user_progress = get_user_progress(user_id)
     current_question_index = user_progress.get(course_id, {}).get(chapter_id, 0)
 
-    with open('src/backend/data/questions.json') as f:
+    with open('data/questions.json') as f:
         all_questions = json.load(f)
 
     course_questions = all_questions.get(course_id, {})

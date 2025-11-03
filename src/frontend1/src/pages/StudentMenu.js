@@ -31,6 +31,11 @@ function StudentMenu() {
     e.preventDefault();
     navigate('/docs');
   }
+
+  function goToChat(e) {
+    e.preventDefault();
+    navigate('/chat');
+  }
   
   async function logout(e) {
     e.preventDefault();
@@ -56,6 +61,7 @@ function StudentMenu() {
                 </button>
               ))}
               <button onClick={goToProgress} className="mbtn">Skill Progress</button>
+              <button onClick={goToChat} className="mbtn">Chat with PyP</button>
               <button onClick={goToDocs} className="mbtn">Docs</button>
               <button onClick={logout} className="mbtn">Exit</button>
           </div>
