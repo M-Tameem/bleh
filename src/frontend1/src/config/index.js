@@ -1,5 +1,5 @@
 const config = {
-    apiUrl: process.env.REACT_APP_API_URL || 'http://localhost:5000',
+    apiUrl: process.env.REACT_APP_API_URL || 'http://localhost:3000',
     appName: process.env.REACT_APP_NAME || 'MyApp',
     env: process.env.REACT_APP_ENV || 'development',
     apiTimeout: parseInt(process.env.REACT_APP_API_TIMEOUT || '10000'),
