@@ -1,0 +1,10 @@
+{
+    "1": {
+        "name": "John Doe",
+        "grade": "A"
+    },
+    "2": {
+        "name": "Jane Smith",
+        "grade": "B"
+    }
+}

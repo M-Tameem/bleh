@@ -1,0 +1,38 @@
+{
+    "python101": {
+        "ch1": [
+            {
+                "id": "q1",
+                "question": "What is the output of `print('Hello, World!')`?",
+                "options": [
+                    "Hello, World!",
+                    "'Hello, World!'",
+                    "Error"
+                ],
+                "answer": "Hello, World!"
+            },
+            {
+                "id": "q2",
+                "question": "How do you print a variable named 'my_variable'?",
+                "options": [
+                    "print(my_variable)",
+                    "print('my_variable')",
+                    "print(variable)"
+                ],
+                "answer": "print(my_variable)"
+            }
+        ],
+        "ch2": [
+            {
+                "id": "q1",
+                "question": "What is the output of `for i in range(3): print(i)`?",
+                "options": [
+                    "0\n1\n2",
+                    "1\n2\n3",
+                    "0, 1, 2"
+                ],
+                "answer": "0\n1\n2"
+            }
+        ]
+    }
+}
