@@ -1,0 +1,32 @@
+{
+    "python101": [
+        {
+            "id": "ch1",
+            "name": "Chapter 1: Print Statements",
+            "content": "Learn how to display information in Python using the print function, format output, and combine text with values.",
+            "lesson": {
+                "sections": [
+                    {
+                    "type": "text",
+                    "title": "Using the print() Function",
+                    "content": "**What is the print() function?**\nThe `print()` function is one of the most fundamental functions in Python."
+                  }
+                ]
+            }
+        },
+        {
+            "id": "ch2",
+            "name": "Chapter 2: For Loops",
+            "content": "Understand how to repeat work with for loops, iterate over sequences, and use range() to control loop counts.",
+            "lesson": {
+                "sections": [
+                    {
+                        "type": "text",
+                        "title": "Python For Loops",
+                        "content": "**Why Do We Need Loops?**\nImagine you need to print numbers 1 through 100. You could write print(1), print(2), print(3)... 100 times. OR you could use a loop!"
+                      }                      
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "python101": {
+        "ch1": [
+            {
+                "id": "q1",
+                "type": "multiple_choice",
+                "question": "What is the output of `print('Hello, World!')`?",
+                "options": [
+                    "Hello, World!",
+                    "'Hello, World!'",
+                    "Error"
+                ],
+                "answer": "Hello, World!"
+            },
+            {
+                "id": "q2",
+                "type": "code",
+                "function_name": "greet",
+                "question": "Write a function called `greet` that takes a name and returns 'Hello, {name}!'",
+                "test_cases": [
+                    {"input": ["Alice"], "expected": "Hello, Alice!"},
+                    {"input": ["Bob"], "expected": "Hello, Bob!"}
+                ],
+                "starter_code": "def greet(name):\n    # Write your code here\n    pass"
+            }            
+        ],
+        "ch2": [
+            {
+                "id": "q1",
+                "type": "code",
+                "question": "Write a for loop that prints numbers 0 to 4",
+                "test_cases": [
+                    {"input": [], "expected_output": "0\n1\n2\n3\n4\n"}
+                ],
+                "starter_code": "# Write your for loop here\n"
+            }
+        ]
+    }
+}
