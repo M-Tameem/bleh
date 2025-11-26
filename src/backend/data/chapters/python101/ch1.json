@@ -1,0 +1,330 @@
+[
+  {
+    "id": "q1",
+    "type": "multiple_choice",
+    "question": "Python is described as what kind of language in this chapter?",
+    "options": [
+      "Low-level compiled language",
+      "High-level interpreted language",
+      "Pure markup language"
+    ],
+    "answer": "High-level interpreted language",
+    "difficulty": 1
+  },
+  {
+    "id": "q2",
+    "type": "multiple_choice",
+    "question": "What is the main goal of Python’s design mentioned in the chapter?",
+    "options": [
+      "Maximum speed, even if code is hard to read",
+      "Readable code that is easy to understand",
+      "Only supporting one programming style"
+    ],
+    "answer": "Readable code that is easy to understand",
+    "difficulty": 1
+  },
+  {
+    "id": "q3",
+    "type": "multiple_choice",
+    "question": "What does the print() function do?",
+    "options": [
+      "Reads input from the user",
+      "Displays information on the screen",
+      "Saves data to a file"
+    ],
+    "answer": "Displays information on the screen",
+    "difficulty": 1
+  },
+  {
+    "id": "q4",
+    "type": "multiple_choice",
+    "question": "In the line print(\"Hello, Python!\"), what is \"Hello, Python!\"?",
+    "options": [
+      "An integer",
+      "A string",
+      "A comment"
+    ],
+    "answer": "A string",
+    "difficulty": 1
+  },
+  {
+    "id": "q5",
+    "type": "multiple_choice",
+    "question": "Which symbol starts a single-line comment in Python?",
+    "options": [
+      "#",
+      "//",
+      "--"
+    ],
+    "answer": "#",
+    "difficulty": 1
+  },
+  {
+    "id": "q6",
+    "type": "multiple_choice",
+    "question": "What is a typical use of a triple-quoted string (\"\"\" ... \"\"\") shown in this chapter?",
+    "options": [
+      "To write a multi-line description of the file or program",
+      "To declare variables",
+      "To define a loop"
+    ],
+    "answer": "To write a multi-line description of the file or program",
+    "difficulty": 1
+  },
+  {
+    "id": "q7",
+    "type": "multiple_choice",
+    "question": "How does Python know which lines belong inside an if-block?",
+    "options": [
+      "By curly braces { } around the block",
+      "By indentation (leading spaces or tabs)",
+      "By a special END keyword"
+    ],
+    "answer": "By indentation (leading spaces or tabs)",
+    "difficulty": 2
+  },
+  {
+    "id": "q8",
+    "type": "multiple_choice",
+    "question": "Why does this code cause an IndentationError?\n\nprint(\"Line 1\")\n    print(\"Line 2\")",
+    "options": [
+      "Because print() cannot be used twice in a row",
+      "Because Line 2 is indented even though it is not inside any block",
+      "Because strings cannot contain spaces"
+    ],
+    "answer": "Because Line 2 is indented even though it is not inside any block",
+    "difficulty": 2
+  },
+  {
+    "id": "q9",
+    "type": "multiple_choice",
+    "question": "Which list shows areas where Python is commonly used, according to this chapter?",
+    "options": [
+      "Web backends, data analysis, automation scripts",
+      "Device drivers, OS kernels, BIOS code",
+      "Only mobile apps and game consoles"
+    ],
+    "answer": "Web backends, data analysis, automation scripts",
+    "difficulty": 2
+  },
+  {
+    "id": "q10",
+    "type": "multiple_choice",
+    "question": "Which of these is listed as a PRO of Python?",
+    "options": [
+      "Very readable and concise, good for learning",
+      "Only runs on one operating system",
+      "Has no external libraries"
+    ],
+    "answer": "Very readable and concise, good for learning",
+    "difficulty": 2
+  },
+  {
+    "id": "q11",
+    "type": "multiple_choice",
+    "question": "Which of these is listed as a CON of Python?",
+    "options": [
+      "Usually slower than low-level compiled languages for heavy CPU work",
+      "Cannot handle strings",
+      "Cannot be used for data analysis"
+    ],
+    "answer": "Usually slower than low-level compiled languages for heavy CPU work",
+    "difficulty": 2
+  },
+  {
+    "id": "q12",
+    "type": "multiple_choice",
+    "question": "What does the input() function do?",
+    "options": [
+      "Displays text on the screen",
+      "Reads a line of text typed by the user",
+      "Stops the program"
+    ],
+    "answer": "Reads a line of text typed by the user",
+    "difficulty": 2
+  },
+  {
+    "id": "q13",
+    "type": "multiple_choice",
+    "question": "What type of value does input() always return?",
+    "options": [
+      "int",
+      "str",
+      "float"
+    ],
+    "answer": "str",
+    "difficulty": 3
+  },
+  {
+    "id": "q14",
+    "type": "multiple_choice",
+    "question": "According to the chapter, which programming styles does Python support?",
+    "options": [
+      "Only object-oriented",
+      "Procedural, object-oriented, and functional",
+      "Only functional"
+    ],
+    "answer": "Procedural, object-oriented, and functional",
+    "difficulty": 3
+  },
+  {
+    "id": "q15",
+    "type": "multiple_choice",
+    "question": "What does it mean that Python \"handles types at runtime\"?",
+    "options": [
+      "You must declare every variable type before running the program",
+      "Python figures out variable types while the program runs",
+      "Python does not use types at all"
+    ],
+    "answer": "Python figures out variable types while the program runs",
+    "difficulty": 3
+  },
+  {
+    "id": "q16",
+    "type": "multiple_choice",
+    "question": "Given this code:\n\nx, y = input(\"Enter two numbers: \").split()\n\nand the user types 10 20, what are x and y right after this line?",
+    "options": [
+      "x = 10, y = 20 (integers)",
+      "x = \"10\", y = \"20\" (strings)",
+      "x = \"10 20\", y is undefined"
+    ],
+    "answer": "x = \"10\", y = \"20\" (strings)",
+    "difficulty": 3
+  },
+  {
+    "id": "q17",
+    "type": "multiple_choice",
+    "question": "After reading x and y with split(), how do you convert both to integers so you can add them?",
+    "options": [
+      "x = int(x); y = int(y)",
+      "x = str(x); y = str(y)",
+      "x = float(); y = float()"
+    ],
+    "answer": "x = int(x); y = int(y)",
+    "difficulty": 4
+  },
+  {
+    "id": "q18",
+    "type": "multiple_choice",
+    "question": "In this example:\n\nage = int(input(\"Enter your age: \"))\nprint(\"Next year you will be\", age + 1)\n\nWhat is the purpose of int(...) here?",
+    "options": [
+      "To turn the number into a string",
+      "To convert the text from input() into an integer so you can do arithmetic",
+      "To stop the program if the user types letters"
+    ],
+    "answer": "To convert the text from input() into an integer so you can do arithmetic",
+    "difficulty": 4
+  },
+  {
+    "id": "q19",
+    "type": "multiple_choice",
+    "question": "What is the output of this code if the user enters 3 4?\n\nx, y = input(\"Enter two numbers: \").split()\nx = int(x)\ny = int(y)\nprint(\"x =\", x, \"y =\", y)\n",
+    "options": [
+      "x = 3 y = 4",
+      "x = 34 y = 0",
+      "x = x y = y"
+    ],
+    "answer": "x = 3 y = 4",
+    "difficulty": 5
+  },
+  {
+    "id": "q20",
+    "type": "code",
+    "function_name": "hello_python",
+    "question": "Write a function called `hello_python` that returns the string \"Hello, World!\".",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": "Hello, World!"
+      }
+    ],
+    "starter_code": "def hello_python():\n    # Return the classic first-program message\n    pass",
+    "difficulty": 1
+  },
+  {
+    "id": "q21",
+    "type": "code",
+    "function_name": "python_is_fun",
+    "question": "In the chapter, there is an example that prints \"Python is fun\". Write a function called `python_is_fun` that returns the string \"Python is fun\".",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": "Python is fun"
+      }
+    ],
+    "starter_code": "def python_is_fun():\n    # Return the text from the example in the chapter\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q22",
+    "type": "code",
+    "function_name": "make_hi_message",
+    "question": "The chapter shows an example:\n\nname = input(\"Enter your name: \")\nprint(\"Hi\", name)\n\nWrite a function called `make_hi_message` that takes a name (as a string) and returns the string \"Hi \" followed by the name. For example, make_hi_message(\"Sam\") should return \"Hi Sam\".",
+    "test_cases": [
+      {
+        "input": ["Sam"],
+        "expected": "Hi Sam"
+      },
+      {
+        "input": ["Alex"],
+        "expected": "Hi Alex"
+      }
+    ],
+    "starter_code": "def make_hi_message(name):\n    # Build a string like: Hi Sam\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q23",
+    "type": "code",
+    "function_name": "format_xy",
+    "question": "The chapter shows:\n\nprint(\"x =\", x, \"y =\", y)\n\nWrite a function called `format_xy` that takes two values x and y (as strings) and returns the single string \"x = {x} y = {y}\". For example, format_xy(\"10\", \"20\") should return \"x = 10 y = 20\".",
+    "test_cases": [
+      {
+        "input": ["10", "20"],
+        "expected": "x = 10 y = 20"
+      },
+      {
+        "input": ["a", "b"],
+        "expected": "x = a y = b"
+      }
+    ],
+    "starter_code": "def format_xy(x, y):\n    # Return a string like: x = 10 y = 20\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q24",
+    "type": "code",
+    "function_name": "next_year_message",
+    "question": "The chapter example prints:\n\n\"Next year you will be\", age + 1\n\nWrite a function called `next_year_message` that takes an integer age and returns the string \"Next year you will be X\" where X is age + 1.",
+    "test_cases": [
+      {
+        "input": [10],
+        "expected": "Next year you will be 11"
+      },
+      {
+        "input": [19],
+        "expected": "Next year you will be 20"
+      }
+    ],
+    "starter_code": "def next_year_message(age):\n    # Use age + 1 to build the message from the chapter\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q25",
+    "type": "code",
+    "function_name": "split_two_values",
+    "question": "The chapter shows using split() on one input line:\n\nx, y = input(\"Enter two numbers: \").split()\n\nWrite a function called `split_two_values` that takes a single string like \"10 20\" and returns a list [\"10\", \"20\"].",
+    "test_cases": [
+      {
+        "input": ["10 20"],
+        "expected": ["10", "20"]
+      },
+      {
+        "input": ["hello world"],
+        "expected": ["hello", "world"]
+      }
+    ],
+    "starter_code": "def split_two_values(text):\n    # Use split() to separate text into two parts\n    pass",
+    "difficulty": 5
+  }
+]

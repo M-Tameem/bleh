@@ -1,0 +1,141 @@
+{
+    "student1": {
+        "mastery": {
+            "python101:ch4:mcq": 0.4831,
+            "python101:ch4:code": 0.5034,
+            "python101:ch1:mcq": 0.8916,
+            "python101:ch1:code": 0.8846,
+            "python101:ch3:mcq": 0.8346,
+            "python101:ch3:code": 1.0
+        },
+        "bkt_history": {
+            "python101:ch4:mcq": [
+                {
+                    "correct": 1,
+                    "difficulty": 1,
+                    "timestamp": "2025-11-24T05:02:11.966261"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 1,
+                    "timestamp": "2025-11-24T05:02:37.534461"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 1,
+                    "timestamp": "2025-11-24T05:03:01.824059"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 1,
+                    "timestamp": "2025-11-24T05:03:10.535967"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 1,
+                    "timestamp": "2025-11-24T05:03:17.913321"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 2,
+                    "timestamp": "2025-11-24T05:03:32.735662"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 2,
+                    "timestamp": "2025-11-24T05:13:05.242815"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 2,
+                    "timestamp": "2025-11-24T05:14:09.505825"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 2,
+                    "timestamp": "2025-11-24T05:14:27.905420"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 2,
+                    "timestamp": "2025-11-24T05:14:33.673131"
+                }
+            ],
+            "python101:ch4:code": [
+                {
+                    "correct": 1,
+                    "difficulty": 1,
+                    "timestamp": "2025-11-24T05:02:28.032149"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 2,
+                    "timestamp": "2025-11-24T05:14:03.253549"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 2,
+                    "timestamp": "2025-11-24T05:14:21.190757"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 2,
+                    "timestamp": "2025-11-24T05:15:17.842280"
+                }
+            ],
+            "python101:ch1:mcq": [
+                {
+                    "correct": 1,
+                    "difficulty": 1,
+                    "timestamp": "2025-11-24T11:10:36.802087"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 2,
+                    "timestamp": "2025-11-24T11:36:51.270859"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 4,
+                    "timestamp": "2025-11-24T11:37:24.396877"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 5,
+                    "timestamp": "2025-11-24T11:41:10.458344"
+                }
+            ],
+            "python101:ch1:code": [
+                {
+                    "correct": 1,
+                    "difficulty": 3,
+                    "timestamp": "2025-11-24T11:36:45.858200"
+                }
+            ],
+            "python101:ch3:mcq": [
+                {
+                    "correct": 1,
+                    "difficulty": 1,
+                    "timestamp": "2025-11-26T03:23:43.595724"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 3,
+                    "timestamp": "2025-11-26T03:24:14.505889"
+                },
+                {
+                    "correct": 1,
+                    "difficulty": 4,
+                    "timestamp": "2025-11-26T03:24:20.420791"
+                }
+            ],
+            "python101:ch3:code": [
+                {
+                    "correct": 1,
+                    "difficulty": 4,
+                    "timestamp": "2025-11-26T03:24:06.746927"
+                }
+            ]
+        }
+    }
+}

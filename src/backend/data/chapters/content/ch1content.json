@@ -1,0 +1,53 @@
+{
+  "python101": [
+    {
+      "id": "ch1",
+      "name": "Chapter 1: Introduction to Python & Basic I/O",
+      "content": "Overview of Python as a language and how to perform basic input and output using print() and input().",
+      "lesson": {
+        "sections": [
+          {
+            "type": "text",
+            "title": "What is Python?",
+            "content": "- High-level, interpreted language focused on **readable** code.\n- Handles types at runtime (no explicit type declarations).\n- Supports procedural, object-oriented, and functional styles.\n\nExample:\n```python\nprint(\"Python is fun\")\n```"
+          },
+          {
+            "type": "text",
+            "title": "First Program: \"Hello, Python\"",
+            "content": "A classic first program in Python:\n\n```python\n# This is a comment. Python ignores it.\nprint(\"Hello, Python!\")\n```\n\n**Key ideas**\n- `print(...)` is a built-in function that shows output on the screen.\n- Text in quotes like `\"Hello, Python!\"` is a string.\n- `#` starts a single-line comment.\n\nYou can also add a multi-line note using a triple-quoted string:\n\n```python\n\"\"\"\nShort description of this file or program.\n\"\"\"\n```"
+          },
+          {
+            "type": "text",
+            "title": "Indentation in Python",
+            "content": "Python uses **indentation** (leading spaces or tabs) to define code blocks.\n\nCorrect example:\n```python\nx = 5\nif x > 0:\n    print(\"Positive\")\n```\nAll lines inside the `if` block are indented to the same level.\n\nIncorrect example:\n```python\nprint(\"Line 1\")\n    print(\"Line 2\")  # IndentationError\n```\nHere, `Line 2` is indented even though it is not inside any block, so Python raises an `IndentationError`"
+          },
+          {
+            "type": "text",
+            "title": "Where is Python Used?",
+            "content": "Python is widely used for:\n\n- Web backends (APIs and websites).\n- Data analysis and machine learning.\n- Automation scripts and small tools.\n- Prototypes and quick experiments.\n\nMany large companies use Python somewhere in their stack for these kinds of tasks."
+          },
+          {
+            "type": "text",
+            "title": "High-Level Pros and Cons",
+            "content": "**Pros**\n- Very readable and concise, good for learning and rapid development.\n- Huge ecosystem of packages and libraries.\n- Runs on all major operating systems.\n\n**Cons**\n- Usually slower than low-level compiled languages for heavy CPU work.\n- Not the main choice for OS kernels, device drivers, or most mobile/frontend apps."
+          },
+          {
+            "type": "text",
+            "title": "Output with print()",
+            "content": "Use `print()` to display information in the console.\n\nBasic output:\n```python\nprint(\"Hello\")\n```\n\nPrinting a variable:\n```python\nname = \"Sam\"\nprint(\"Hello,\", name)\n```\nYou can pass multiple values to `print()` by separating them with commas."
+          },
+          {
+            "type": "text",
+            "title": "Input with input()",
+            "content": "Use `input()` to read a line of text from the user.\n\n```python\nname = input(\"Enter your name: \")\nprint(\"Hi\", name)\n```\n`input()` always returns a string.\n\nIf you need a number, convert it explicitly:\n\n```python\nage = int(input(\"Enter your age: \"))\nprint(\"Next year you will be\", age + 1)\n```"
+          },
+          {
+            "type": "text",
+            "title": "Multiple Inputs in One Line",
+            "content": "You can read several values at once and split them into variables.\n\n```python\nx, y = input(\"Enter two numbers: \").split()\nprint(\"x =\", x, \"y =\", y)\n```\nThis reads a single line like `10 20` and assigns `x = \"10\"` `y = \"20\"`\nConvert to numbers later if needed, for example, with `int(x)` and `int(y)`"
+          }
+        ]
+      }
+    }
+  ]
+}

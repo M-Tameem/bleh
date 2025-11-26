@@ -1,0 +1,362 @@
+[
+  {
+    "id": "q1",
+    "type": "multiple_choice",
+    "question": "In the example c = a + b, what are a and b called?",
+    "options": [
+      "Operators",
+      "Operands",
+      "Keywords"
+    ],
+    "answer": "Operands",
+    "difficulty": 1
+  },
+  {
+    "id": "q2",
+    "type": "multiple_choice",
+    "question": "Which of these is an arithmetic operator in Python?",
+    "options": [
+      "+",
+      "==",
+      "and"
+    ],
+    "answer": "+",
+    "difficulty": 1
+  },
+  {
+    "id": "q3",
+    "type": "multiple_choice",
+    "question": "Given a = 17 and b = 5, what is a + b?",
+    "options": [
+      "22",
+      "12",
+      "3.4"
+    ],
+    "answer": "22",
+    "difficulty": 1
+  },
+  {
+    "id": "q4",
+    "type": "multiple_choice",
+    "question": "Given a = 17 and b = 5, what is a / b?",
+    "options": [
+      "3.4",
+      "3",
+      "2"
+    ],
+    "answer": "3.4",
+    "difficulty": 2
+  },
+  {
+    "id": "q5",
+    "type": "multiple_choice",
+    "question": "Given a = 17 and b = 5, what is a // b (floor division)?",
+    "options": [
+      "3.0",
+      "3",
+      "2"
+    ],
+    "answer": "3",
+    "difficulty": 2
+  },
+  {
+    "id": "q6",
+    "type": "multiple_choice",
+    "question": "Given a = 17 and b = 5, what is a % b (remainder)?",
+    "options": [
+      "3",
+      "2",
+      "1"
+    ],
+    "answer": "2",
+    "difficulty": 2
+  },
+  {
+    "id": "q7",
+    "type": "multiple_choice",
+    "question": "Which operator is used for exponent (power) in Python?",
+    "options": [
+      "^",
+      "**",
+      "^^"
+    ],
+    "answer": "**",
+    "difficulty": 2
+  },
+  {
+    "id": "q8",
+    "type": "multiple_choice",
+    "question": "Which of these is a comparison (relational) operator?",
+    "options": [
+      "==",
+      "+",
+      "and"
+    ],
+    "answer": "==",
+    "difficulty": 1
+  },
+  {
+    "id": "q9",
+    "type": "multiple_choice",
+    "question": "Given x = 8 and y = 12, what is the result of x < y?",
+    "options": [
+      "True",
+      "False",
+      "8"
+    ],
+    "answer": "True",
+    "difficulty": 2
+  },
+  {
+    "id": "q10",
+    "type": "multiple_choice",
+    "question": "Which logical operator is used to require that BOTH conditions are True?",
+    "options": [
+      "and",
+      "or",
+      "not"
+    ],
+    "answer": "and",
+    "difficulty": 1
+  },
+  {
+    "id": "q11",
+    "type": "multiple_choice",
+    "question": "Given is_admin = True and has_token = False, what is is_admin or has_token?",
+    "options": [
+      "True",
+      "False",
+      "0"
+    ],
+    "answer": "True",
+    "difficulty": 2
+  },
+  {
+    "id": "q12",
+    "type": "multiple_choice",
+    "question": "According to the chapter, what is the precedence order for logical operators?",
+    "options": [
+      "and > or > not",
+      "not > and > or",
+      "or > and > not"
+    ],
+    "answer": "not > and > or",
+    "difficulty": 3
+  },
+  {
+    "id": "q13",
+    "type": "multiple_choice",
+    "question": "What does the operator += do in n += 5?",
+    "options": [
+      "Assigns 5 to n",
+      "Adds 5 to n and stores the result back in n",
+      "Does nothing; it is the same as n = 5"
+    ],
+    "answer": "Adds 5 to n and stores the result back in n",
+    "difficulty": 2
+  },
+  {
+    "id": "q14",
+    "type": "multiple_choice",
+    "question": "Which of these is a bitwise operator?",
+    "options": [
+      "&",
+      "and",
+      "=="
+    ],
+    "answer": "&",
+    "difficulty": 2
+  },
+  {
+    "id": "q15",
+    "type": "multiple_choice",
+    "question": "Let a = 0b010 and b = 0b111 (binary). What is a & b (bitwise AND)?",
+    "options": [
+      "0b010 (2)",
+      "0b111 (7)",
+      "0b000 (0)"
+    ],
+    "answer": "0b010 (2)",
+    "difficulty": 3
+  },
+  {
+    "id": "q16",
+    "type": "multiple_choice",
+    "question": "In the identity operators example, why is a is b False when a = [1, 2] and b = [1, 2]?",
+    "options": [
+      "Because they have different contents",
+      "Because they are different objects in memory",
+      "Because lists cannot be compared"
+    ],
+    "answer": "Because they are different objects in memory",
+    "difficulty": 3
+  },
+  {
+    "id": "q17",
+    "type": "multiple_choice",
+    "question": "Which operator checks if a value is inside a list or string?",
+    "options": [
+      "in",
+      "is",
+      "=="
+    ],
+    "answer": "in",
+    "difficulty": 2
+  },
+  {
+    "id": "q18",
+    "type": "multiple_choice",
+    "question": "What does the ternary (conditional) operator pattern look like in Python?",
+    "options": [
+      "if condition ? a : b",
+      "a if condition else b",
+      "a ? b : condition"
+    ],
+    "answer": "a if condition else b",
+    "difficulty": 3
+  },
+  {
+    "id": "q19",
+    "type": "multiple_choice",
+    "question": "Given expr = 10 + 2 * 3, what is printed by print(expr)?",
+    "options": [
+      "36",
+      "16",
+      "30"
+    ],
+    "answer": "16",
+    "difficulty": 3
+  },
+  {
+    "id": "q20",
+    "type": "multiple_choice",
+    "question": "What is the value of 2 ** 3 ** 2 according to the chapter?",
+    "options": [
+      "64",
+      "512",
+      "256"
+    ],
+    "answer": "512",
+    "difficulty": 4
+  },
+  {
+    "id": "q21",
+    "type": "multiple_choice",
+    "question": "Why does 2 ** 3 ** 2 evaluate as 2 ** (3 ** 2) and not (2 ** 3) ** 2?",
+    "options": [
+      "Because ** is left to right",
+      "Because ** is right to left (right-associative)",
+      "Because Python always adds parentheses automatically"
+    ],
+    "answer": "Because ** is right to left (right-associative)",
+    "difficulty": 4
+  },
+  {
+    "id": "q22",
+    "type": "multiple_choice",
+    "question": "Given x = True, y = False, z = False, what is x or y and z?",
+    "options": [
+      "True",
+      "False",
+      "An error"
+    ],
+    "answer": "True",
+    "difficulty": 5
+  },
+  {
+    "id": "q23",
+    "type": "multiple_choice",
+    "question": "In print(100 / 10 * 10), why is the result 100.0 and not 1.0?",
+    "options": [
+      "Because * has higher precedence than /",
+      "Because / and * have the same precedence and are evaluated left to right",
+      "Because / is ignored when * is present"
+    ],
+    "answer": "Because / and * have the same precedence and are evaluated left to right",
+    "difficulty": 5
+  },
+  {
+    "id": "q24",
+    "type": "code",
+    "function_name": "add_numbers",
+    "question": "Write a function called `add_numbers` that takes two numbers a and b and returns a + b using the + operator.",
+    "test_cases": [
+      { "input": [3, 2], "expected": 5 },
+      { "input": [10, -4], "expected": 6 }
+    ],
+    "starter_code": "def add_numbers(a, b):\n    # Return the sum of a and b\n    pass",
+    "difficulty": 1
+  },
+  {
+    "id": "q25",
+    "type": "code",
+    "function_name": "division_ops",
+    "question": "Write a function called `division_ops` that takes two integers a and b and returns a list [a / b, a // b, a % b]. Use true division, floor division, and remainder as shown in the chapter.",
+    "test_cases": [
+      { "input": [17, 5], "expected": [3.4, 3, 2] },
+      { "input": [9, 4], "expected": [2.25, 2, 1] }
+    ],
+    "starter_code": "def division_ops(a, b):\n    # Return [a / b, a // b, a % b]\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q26",
+    "type": "code",
+    "function_name": "compare_equal",
+    "question": "Write a function called `compare_equal` that takes two values x and y and returns the result of x == y.",
+    "test_cases": [
+      { "input": [5, 5], "expected": true },
+      { "input": [5, 6], "expected": false }
+    ],
+    "starter_code": "def compare_equal(x, y):\n    # Return whether x is equal to y using ==\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q27",
+    "type": "code",
+    "function_name": "admin_and_token",
+    "question": "Write a function called `admin_and_token` that takes two booleans is_admin and has_token and returns the result of is_admin and has_token.",
+    "test_cases": [
+      { "input": [true, false], "expected": false },
+      { "input": [true, true], "expected": true }
+    ],
+    "starter_code": "def admin_and_token(is_admin, has_token):\n    # Return is_admin and has_token\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q28",
+    "type": "code",
+    "function_name": "toggle_flag",
+    "question": "Write a function called `toggle_flag` that takes a boolean flag and returns not flag.",
+    "test_cases": [
+      { "input": [true], "expected": false },
+      { "input": [false], "expected": true }
+    ],
+    "starter_code": "def toggle_flag(flag):\n    # Return the opposite of flag using not\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q29",
+    "type": "code",
+    "function_name": "update_number",
+    "question": "Write a function called `update_number` that takes an integer n and performs the following steps in order inside the function:\n\nn += 5\nn *= 2\n\nThen return n.",
+    "test_cases": [
+      { "input": [10], "expected": 30 },
+      { "input": [0], "expected": 10 }
+    ],
+    "starter_code": "def update_number(n):\n    # Use += and *= as shown in the chapter, then return n\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q30",
+    "type": "code",
+    "function_name": "bitwise_and_or",
+    "question": "Write a function called `bitwise_and_or` that takes two integers a and b and returns a list [a & b, a | b], using the bitwise AND and OR operators.",
+    "test_cases": [
+      { "input": [6, 3], "expected": [2, 7] },
+      { "input": [5, 1], "expected": [1, 5] }
+    ],
+    "starter_code": "def bitwise_and_or(a, b):\n    # Return [a & b, a | b]\n    pass",
+    "difficulty": 3
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "python101": [
+    {
+      "id": "ch6",
+      "name": "Chapter 6: Conditional Statements (Control Flow)",
+      "content": "Learn how to control program flow using if, elif, else, nested conditions, ternary expressions, and match-case.",
+      "lesson": {
+        "sections": [
+          {
+            "type": "text",
+            "title": "What Are Conditional Statements?",
+            "content": "Conditional statements let your program choose which code to run based on a condition (True/False)."
+          },
+          {
+            "type": "text",
+            "title": "if Statement",
+            "content": "Run a block only if the condition is True.\n\n```python\ntemperature = 30\n\nif temperature > 25:\n    print(\"Turn on the AC.\")\n```"
+          },
+          {
+            "type": "text",
+            "title": "Short-Hand if",
+            "content": "Single-line if for very simple checks.\n\n```python\nscore = 95\nif score > 90: print(\"Excellent!\")\n```"
+          },
+          {
+            "type": "text",
+            "title": "if–else",
+            "content": "Choose one of two branches.\n\n```python\nbalance = 120\n\nif balance >= 100:\n    print(\"Order confirmed.\")\nelse:\n    print(\"Insufficient funds.\")\n```"
+          },
+          {
+            "type": "text",
+            "title": "Short-Hand if–else (Ternary Expression)",
+            "content": "Compact way to choose a value based on a condition.\n\nPattern:\n```python\nresult = value_if_true if condition else value_if_false\n```\n\nExample:\n```python\nage = 16\ncategory = \"adult\" if age >= 18 else \"minor\"\nprint(category)  # minor\n```"
+          },
+          {
+            "type": "text",
+            "title": "if–elif–else",
+            "content": "Check multiple conditions in order; only the first True branch runs.\n\n```python\nspeed = 80\n\nif speed < 40:\n    print(\"Too slow\")\nelif speed <= 80:\n    print(\"Normal speed\")\nelse:\n    print(\"Too fast\")\n```"
+          },
+          {
+            "type": "text",
+            "title": "Nested if",
+            "content": "An if inside another if for condition-inside-condition logic.\n\n```python\nlogged_in = True\nis_admin = False\n\nif logged_in:\n    if is_admin:\n        print(\"Show admin panel\")\n    else:\n        print(\"Show user dashboard\")\nelse:\n    print(\"Please log in\")\n```\n\nUse nested ifs sparingly; if–elif is often clearer."
+          },
+          {
+            "type": "text",
+            "title": "match–case (Python 3.10+)",
+            "content": "match–case is like switch in other languages; it matches a value against patterns.\n\n```python\nstatus = 404\n\nmatch status:\n    case 200:\n        print(\"OK\")\n    case 400 | 404:\n        print(\"Client error\")\n    case 500:\n        print(\"Server error\")\n    case _:\n        print(\"Unknown status\")\n```\n\n`_` is the default case that matches anything."
+          }
+        ]
+      }
+    }
+  ]
+}

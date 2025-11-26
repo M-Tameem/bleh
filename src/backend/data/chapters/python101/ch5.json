@@ -1,0 +1,554 @@
+[
+  {
+    "id": "q1",
+    "type": "multiple_choice",
+    "question": "What is a keyword in Python?",
+    "options": [
+      "A built-in function that prints text",
+      "A special reserved word that is part of the language syntax",
+      "Any word you choose to name a variable"
+    ],
+    "answer": "A special reserved word that is part of the language syntax",
+    "difficulty": 1
+  },
+  {
+    "id": "q2",
+    "type": "multiple_choice",
+    "question": "Which of the following is a Python keyword?",
+    "options": [
+      "total",
+      "number",
+      "if"
+    ],
+    "answer": "if",
+    "difficulty": 1
+  },
+  {
+    "id": "q3",
+    "type": "multiple_choice",
+    "question": "Which of the following is NOT a Python keyword?",
+    "options": [
+      "if",
+      "else",
+      "loop"
+    ],
+    "answer": "loop",
+    "difficulty": 1
+  },
+  {
+    "id": "q4",
+    "type": "multiple_choice",
+    "question": "Which of these is a valid variable name in Python?",
+    "options": [
+      "for",
+      "class",
+      "total_score"
+    ],
+    "answer": "total_score",
+    "difficulty": 2
+  },
+  {
+    "id": "q5",
+    "type": "multiple_choice",
+    "question": "What happens when you run this code?\n\nfor = 10\nprint(for)",
+    "options": [
+      "It prints 10",
+      "It prints the word 'for'",
+      "It raises a SyntaxError before running"
+    ],
+    "answer": "It raises a SyntaxError before running",
+    "difficulty": 2
+  },
+  {
+    "id": "q6",
+    "type": "multiple_choice",
+    "question": "Which module and attribute can you use to get the list of all Python keywords?",
+    "options": [
+      "keyword.kwlist",
+      "keywords.list",
+      "sys.keywords"
+    ],
+    "answer": "keyword.kwlist",
+    "difficulty": 3
+  },
+  {
+    "id": "q7",
+    "type": "multiple_choice",
+    "question": "Which statement about Python keywords and identifiers is TRUE?",
+    "options": [
+      "Keywords and identifiers are the same thing.",
+      "Identifiers are names you create; keywords are reserved names built into Python.",
+      "Identifiers can only be one letter long."
+    ],
+    "answer": "Identifiers are names you create; keywords are reserved names built into Python.",
+    "difficulty": 2
+  },
+  {
+    "id": "q8",
+    "type": "multiple_choice",
+    "question": "Which group contains only VALUE keywords in Python?",
+    "options": [
+      "True, False, None",
+      "and, or, not",
+      "if, else, for"
+    ],
+    "answer": "True, False, None",
+    "difficulty": 2
+  },
+  {
+    "id": "q9",
+    "type": "multiple_choice",
+    "question": "Which of these is an OPERATOR-LIKE keyword?",
+    "options": [
+      "value",
+      "and",
+      "loop"
+    ],
+    "answer": "and",
+    "difficulty": 2
+  },
+  {
+    "id": "q10",
+    "type": "multiple_choice",
+    "question": "The keywords if, elif, and else belong to which category?",
+    "options": [
+      "Value keywords",
+      "Control flow keywords",
+      "Async keywords"
+    ],
+    "answer": "Control flow keywords",
+    "difficulty": 2
+  },
+  {
+    "id": "q11",
+    "type": "multiple_choice",
+    "question": "Which line best shows a CONTROL FLOW keyword being used?",
+    "options": [
+      "value = True",
+      "while count < 10:",
+      "result = a and b"
+    ],
+    "answer": "while count < 10:",
+    "difficulty": 3
+  },
+  {
+    "id": "q12",
+    "type": "multiple_choice",
+    "question": "Which pair are both FUNCTION / CLASS keywords?",
+    "options": [
+      "def, class",
+      "func, type",
+      "method, object"
+    ],
+    "answer": "def, class",
+    "difficulty": 2
+  },
+  {
+    "id": "q13",
+    "type": "multiple_choice",
+    "question": "The keywords with and as are mainly used for:",
+    "options": [
+      "Declaring variables",
+      "Context management (resource handling)",
+      "Defining classes"
+    ],
+    "answer": "Context management (resource handling)",
+    "difficulty": 3
+  },
+  {
+    "id": "q14",
+    "type": "multiple_choice",
+    "question": "The keywords import and from are used to:",
+    "options": [
+      "Import modules and names from modules",
+      "Start and stop a Python program",
+      "Convert values between types"
+    ],
+    "answer": "Import modules and names from modules",
+    "difficulty": 2
+  },
+  {
+    "id": "q15",
+    "type": "multiple_choice",
+    "question": "In this code, which word is a CONTEXT MANAGEMENT keyword?\n\nwith open(\"data.txt\") as f:\n    content = f.read()",
+    "options": [
+      "open",
+      "with",
+      "content"
+    ],
+    "answer": "with",
+    "difficulty": 2
+  },
+  {
+    "id": "q16",
+    "type": "multiple_choice",
+    "question": "In the code below, what does the keyword global do?\n\ncount = 0\n\ndef inc():\n    global count\n    count += 1",
+    "options": [
+      "It creates a new local variable count inside the function.",
+      "It tells Python to use the count variable defined at the module (global) level.",
+      "It prevents count from ever changing."
+    ],
+    "answer": "It tells Python to use the count variable defined at the module (global) level.",
+    "difficulty": 4
+  },
+  {
+    "id": "q17",
+    "type": "multiple_choice",
+    "question": "What is the main purpose of the keyword nonlocal inside a nested function?",
+    "options": [
+      "To create a brand new global variable.",
+      "To refer to a variable from the nearest enclosing (non-global) scope.",
+      "To mark a variable as constant and unchangeable."
+    ],
+    "answer": "To refer to a variable from the nearest enclosing (non-global) scope.",
+    "difficulty": 4
+  },
+  {
+    "id": "q18",
+    "type": "multiple_choice",
+    "question": "The keywords global and nonlocal belong to which category?",
+    "options": [
+      "Scope / namespace keywords",
+      "Operator-like keywords",
+      "Async keywords"
+    ],
+    "answer": "Scope / namespace keywords",
+    "difficulty": 3
+  },
+  {
+    "id": "q19",
+    "type": "multiple_choice",
+    "question": "The keywords async and await are mainly used for:",
+    "options": [
+      "File handling",
+      "Asynchronous (non-blocking) programming",
+      "Defining classes"
+    ],
+    "answer": "Asynchronous (non-blocking) programming",
+    "difficulty": 3
+  },
+  {
+    "id": "q20",
+    "type": "multiple_choice",
+    "question": "Which line correctly uses a VALUE keyword?",
+    "options": [
+      "True = 1",
+      "x = True",
+      "false = False"
+    ],
+    "answer": "x = True",
+    "difficulty": 2
+  },
+  {
+    "id": "q21",
+    "type": "multiple_choice",
+    "question": "Which of these correctly uses the keyword in as a membership operator?",
+    "options": [
+      "if name in users:",
+      "in = 5",
+      "users in = name"
+    ],
+    "answer": "if name in users:",
+    "difficulty": 3
+  },
+  {
+    "id": "q22",
+    "type": "multiple_choice",
+    "question": "What is the purpose of the keyword None in Python?",
+    "options": [
+      "It represents the absence of a value.",
+      "It is another name for 0.",
+      "It is the same as an empty string \"\"."
+    ],
+    "answer": "It represents the absence of a value.",
+    "difficulty": 3
+  },
+  {
+    "id": "q23",
+    "type": "multiple_choice",
+    "question": "What is the output of this code?\n\nif True and False:\n    print(\"yes\")\nelse:\n    print(\"no\")",
+    "options": [
+      "yes",
+      "no",
+      "True and False"
+    ],
+    "answer": "no",
+    "difficulty": 3
+  },
+  {
+    "id": "q24",
+    "type": "multiple_choice",
+    "question": "Which list contains ONLY Python control flow keywords?",
+    "options": [
+      "if, elif, else, for, while",
+      "if, maybe, else, repeat",
+      "for, loop, until"
+    ],
+    "answer": "if, elif, else, for, while",
+    "difficulty": 3
+  },
+  {
+    "id": "q25",
+    "type": "multiple_choice",
+    "question": "Which statement about Python's set of keywords is TRUE?",
+    "options": [
+      "You can add new keywords at runtime with import.",
+      "The set of keywords is fixed for each Python version.",
+      "Each file can define its own list of keywords."
+    ],
+    "answer": "The set of keywords is fixed for each Python version.",
+    "difficulty": 4
+  },
+  {
+    "id": "q26",
+    "type": "multiple_choice",
+    "question": "What is the output of this code?\n\nimport keyword\nprint(\"if\" in keyword.kwlist)",
+    "options": [
+      "True",
+      "False",
+      "\"if\""
+    ],
+    "answer": "True",
+    "difficulty": 4
+  },
+  {
+    "id": "q27",
+    "type": "multiple_choice",
+    "question": "Which use of the keyword pass is correct?",
+    "options": [
+      "if x < 0:\n    pass",
+      "pass = 3",
+      "print(pass)"
+    ],
+    "answer": "if x < 0:\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q28",
+    "type": "multiple_choice",
+    "question": "What is the main purpose of the keyword raise?",
+    "options": [
+      "To start a for loop",
+      "To raise (throw) an exception",
+      "To increase a variable by 1"
+    ],
+    "answer": "To raise (throw) an exception",
+    "difficulty": 3
+  },
+  {
+    "id": "q29",
+    "type": "multiple_choice",
+    "question": "In a try-except-finally block, what is the role of the finally part?",
+    "options": [
+      "It never runs if an exception occurs.",
+      "It only runs when no exception occurs.",
+      "It always runs, whether or not an exception occurred."
+    ],
+    "answer": "It always runs, whether or not an exception occurred.",
+    "difficulty": 4
+  },
+  {
+    "id": "q30",
+    "type": "multiple_choice",
+    "question": "What does the keyword lambda define?",
+    "options": [
+      "A new loop type",
+      "A small anonymous function",
+      "A new class"
+    ],
+    "answer": "A small anonymous function",
+    "difficulty": 3
+  },
+  {
+    "id": "q31",
+    "type": "multiple_choice",
+    "question": "Which line correctly defines a class using a keyword?",
+    "options": [
+      "class Person:",
+      "define Person():",
+      "makeclass Person:"
+    ],
+    "answer": "class Person:",
+    "difficulty": 2
+  },
+  {
+    "id": "q32",
+    "type": "multiple_choice",
+    "question": "Which of the following is NOT a Python keyword?",
+    "options": [
+      "yield",
+      "lambda",
+      "func"
+    ],
+    "answer": "func",
+    "difficulty": 2
+  },
+  {
+    "id": "q33",
+    "type": "multiple_choice",
+    "question": "In this code, which words are keywords?\n\ntry:\n    x = int(\"abc\")\nexcept ValueError:\n    print(\"error\")",
+    "options": [
+      "try and except",
+      "x and ValueError",
+      "int and print"
+    ],
+    "answer": "try and except",
+    "difficulty": 3
+  },
+  {
+    "id": "q34",
+    "type": "multiple_choice",
+    "question": "The keyword is is best described as:",
+    "options": [
+      "An operator-like keyword used for identity comparison",
+      "A keyword that imports modules",
+      "A keyword that starts a loop"
+    ],
+    "answer": "An operator-like keyword used for identity comparison",
+    "difficulty": 4
+  },
+  {
+    "id": "q35",
+    "type": "multiple_choice",
+    "question": "Why is this code valid?\n\ndata = {\"in\": 1, \"for\": 2}\nprint(data[\"for\"])",
+    "options": [
+      "You are not allowed to use keywords anywhere in Python.",
+      "Keywords are only restricted as identifiers, not as normal string contents.",
+      "The code is invalid and will always crash."
+    ],
+    "answer": "Keywords are only restricted as identifiers, not as normal string contents.",
+    "difficulty": 5
+  },
+  {
+    "id": "q36",
+    "type": "multiple_choice",
+    "question": "Which statement best describes an identifier in Python?",
+    "options": [
+      "It is always a keyword.",
+      "It is a name you create (for variables, functions, classes, etc.) that must not be a keyword.",
+      "It can only be used for variables, not functions or classes."
+    ],
+    "answer": "It is a name you create (for variables, functions, classes, etc.) that must not be a keyword.",
+    "difficulty": 3
+  },
+  {
+    "id": "q37",
+    "type": "code",
+    "function_name": "is_keyword",
+    "question": "Write a function called `is_keyword` that takes a string `name` and returns `True` if it is a Python keyword, and `False` otherwise. Use the built-in `keyword` module.",
+    "test_cases": [
+      {
+        "input": [
+          "if"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "total"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "return"
+        ],
+        "expected": true
+      }
+    ],
+    "starter_code": "import keyword\n\n\ndef is_keyword(name):\n    # Write your code here\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q38",
+    "type": "code",
+    "function_name": "filter_non_keywords",
+    "question": "Write a function called `filter_non_keywords` that takes a list of strings and returns a new list containing only the strings that are NOT Python keywords.",
+    "test_cases": [
+      {
+        "input": [
+          [
+            "if",
+            "index",
+            "class"
+          ]
+        ],
+        "expected": [
+          "index"
+        ]
+      },
+      {
+        "input": [
+          [
+            "total",
+            "for",
+            "while",
+            "name"
+          ]
+        ],
+        "expected": [
+          "total",
+          "name"
+        ]
+      }
+    ],
+    "starter_code": "import keyword\n\n\ndef filter_non_keywords(names):\n    # Write your code here\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q39",
+    "type": "code",
+    "function_name": "safe_identifier",
+    "question": "Write a function called `safe_identifier` that takes a string `name` and returns it unchanged if it is NOT a keyword. If it IS a keyword, return the name with a trailing underscore added (for example, 'class' becomes 'class_').",
+    "test_cases": [
+      {
+        "input": [
+          "class"
+        ],
+        "expected": "class_"
+      },
+      {
+        "input": [
+          "score"
+        ],
+        "expected": "score"
+      }
+    ],
+    "starter_code": "import keyword\n\n\ndef safe_identifier(name):\n    # Write your code here\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q40",
+    "type": "code",
+    "function_name": "keyword_category",
+    "question": "Write a function called `keyword_category` that takes a string `word`. If `word` is 'True', 'False', or 'None', return 'value'. If it is 'and', 'or', or 'not', return 'operator'. If it is 'if', 'elif', 'else', 'for', or 'while', return 'control_flow'. For anything else, return 'other'.",
+    "test_cases": [
+      {
+        "input": [
+          "True"
+        ],
+        "expected": "value"
+      },
+      {
+        "input": [
+          "and"
+        ],
+        "expected": "operator"
+      },
+      {
+        "input": [
+          "for"
+        ],
+        "expected": "control_flow"
+      },
+      {
+        "input": [
+          "total"
+        ],
+        "expected": "other"
+      }
+    ],
+    "starter_code": "def keyword_category(word):\n    # Write your code here\n    pass",
+    "difficulty": 5
+  }
+]

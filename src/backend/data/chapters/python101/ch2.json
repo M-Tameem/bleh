@@ -1,0 +1,312 @@
+[
+  {
+    "id": "q1",
+    "type": "multiple_choice",
+    "question": "In this chapter, a variable is best described as:",
+    "options": [
+      "A fixed box that always stores an integer",
+      "A name that points to a value in memory",
+      "A comment that explains the code"
+    ],
+    "answer": "A name that points to a value in memory",
+    "difficulty": 1
+  },
+  {
+    "id": "q2",
+    "type": "multiple_choice",
+    "question": "How does Python decide the type of a variable?",
+    "options": [
+      "You must declare the type before using it",
+      "The type is inferred from the value you assign",
+      "Types are chosen randomly at runtime"
+    ],
+    "answer": "The type is inferred from the value you assign",
+    "difficulty": 1
+  },
+  {
+    "id": "q3",
+    "type": "multiple_choice",
+    "question": "Given the code:\n\nx = 5\nname = 'Sara'\nprint(x)\nprint(name)\n\nWhat is printed?",
+    "options": [
+      "5 then Sara on separate lines",
+      "Sara then 5 on separate lines",
+      "An error, because x and name have different types"
+    ],
+    "answer": "5 then Sara on separate lines",
+    "difficulty": 1
+  },
+  {
+    "id": "q4",
+    "type": "multiple_choice",
+    "question": "Which of these is a valid variable name in Python?",
+    "options": [
+      "user_name",
+      "1name",
+      "user-name"
+    ],
+    "answer": "user_name",
+    "difficulty": 1
+  },
+  {
+    "id": "q5",
+    "type": "multiple_choice",
+    "question": "Which rule for naming variables is TRUE?",
+    "options": [
+      "Variable names can start with a digit",
+      "Variable names are case-sensitive",
+      "Hyphens (-) are allowed in variable names"
+    ],
+    "answer": "Variable names are case-sensitive",
+    "difficulty": 2
+  },
+  {
+    "id": "q6",
+    "type": "multiple_choice",
+    "question": "Why is this variable name invalid?\n\nclass = 10",
+    "options": [
+      "Because it starts with a digit",
+      "Because spaces are not allowed",
+      "Because 'class' is a Python keyword"
+    ],
+    "answer": "Because 'class' is a Python keyword",
+    "difficulty": 2
+  },
+  {
+    "id": "q7",
+    "type": "multiple_choice",
+    "question": "Which line correctly assigns the value 7 to the variable x?",
+    "options": [
+      "x = 7",
+      "x == 7",
+      "7 = x"
+    ],
+    "answer": "x = 7",
+    "difficulty": 2
+  },
+  {
+    "id": "q8",
+    "type": "multiple_choice",
+    "question": "What does this code show?\n\nx = 10\nx = 'now text'",
+    "options": [
+      "Python does not allow changing a variable's type",
+      "The same variable can later refer to a different type (dynamic typing)",
+      "The second assignment is ignored"
+    ],
+    "answer": "The same variable can later refer to a different type (dynamic typing)",
+    "difficulty": 3
+  },
+  {
+    "id": "q9",
+    "type": "multiple_choice",
+    "question": "What is printed by this code?\n\na = b = c = 0\nprint(a, b, c)",
+    "options": [
+      "0 0 0",
+      "0 1 2",
+      "An error, because you cannot assign to three variables at once"
+    ],
+    "answer": "0 0 0",
+    "difficulty": 2
+  },
+  {
+    "id": "q10",
+    "type": "multiple_choice",
+    "question": "Given this code:\n\nx, y, lang = 1, 2.5, 'Python'\n\nWhat is the value of lang?",
+    "options": [
+      "1",
+      "2.5",
+      "'Python'"
+    ],
+    "answer": "'Python'",
+    "difficulty": 2
+  },
+  {
+    "id": "q11",
+    "type": "multiple_choice",
+    "question": "Which casting function converts a value to a floating-point number?",
+    "options": [
+      "int(value)",
+      "float(value)",
+      "str(value)"
+    ],
+    "answer": "float(value)",
+    "difficulty": 3
+  },
+  {
+    "id": "q12",
+    "type": "multiple_choice",
+    "question": "Which line correctly converts the string '10' to the integer 10?",
+    "options": [
+      "n = int('10')",
+      "n = float('10')",
+      "n = str('10')"
+    ],
+    "answer": "n = int('10')",
+    "difficulty": 2
+  },
+  {
+    "id": "q13",
+    "type": "multiple_choice",
+    "question": "Consider the code:\n\nx = 5\ny = x\nx = 'hello'\n\nWhat does y refer to after these lines run?",
+    "options": [
+      "The integer 5",
+      "The string 'hello'",
+      "Nothing, because y is deleted when x changes"
+    ],
+    "answer": "The integer 5",
+    "difficulty": 3
+  },
+  {
+    "id": "q14",
+    "type": "multiple_choice",
+    "question": "Given the following code:\n\nx = 5\ny = x\nx = 'hello'\ny = 'world'\n\nWhat is printed by:\n\nprint(x)\nprint(y)",
+    "options": [
+      "5 then 5",
+      "'hello' then 'world'",
+      "'hello' then 5"
+    ],
+    "answer": "'hello' then 'world'",
+    "difficulty": 4
+  },
+  {
+    "id": "q15",
+    "type": "multiple_choice",
+    "question": "In this code:\n\nname = 'outer'\n\ndef show():\n    name = 'inner'\n    print(name)\n\nshow()\nprint(name)\n\nWhat is the output?",
+    "options": [
+      "inner then inner",
+      "outer then outer",
+      "inner then outer"
+    ],
+    "answer": "inner then outer",
+    "difficulty": 3
+  },
+  {
+    "id": "q16",
+    "type": "multiple_choice",
+    "question": "In this code:\n\ncount = 0\n\ndef add_one():\n    global count\n    count = count + 1\n\nadd_one()\nprint(count)\n\nWhat is printed?",
+    "options": [
+      "0",
+      "1",
+      "An error, because count inside the function is always local"
+    ],
+    "answer": "1",
+    "difficulty": 3
+  },
+  {
+    "id": "q17",
+    "type": "multiple_choice",
+    "question": "According to this chapter, how should global variables be used?",
+    "options": [
+      "Use many global variables in real projects whenever possible",
+      "Use global variables sparingly; passing values as parameters is usually cleaner",
+      "Global variables are never allowed in Python"
+    ],
+    "answer": "Use global variables sparingly; passing values as parameters is usually cleaner",
+    "difficulty": 4
+  },
+  {
+    "id": "q18",
+    "type": "multiple_choice",
+    "question": "What does the del keyword do in this code?\n\nx = 10\nprint(x)\n\ndel x\n\n",
+    "options": [
+      "Deletes the integer 10 from Python completely",
+      "Removes the name x from the current scope",
+      "Turns x into 0"
+    ],
+    "answer": "Removes the name x from the current scope",
+    "difficulty": 2
+  },
+  {
+    "id": "q19",
+    "type": "multiple_choice",
+    "question": "What happens if we run this code and then try to print x?\n\nx = 10\ndel x\nprint(x)\n",
+    "options": [
+      "It prints 10",
+      "It prints 0",
+      "It raises a NameError because x is no longer defined"
+    ],
+    "answer": "It raises a NameError because x is no longer defined",
+    "difficulty": 3
+  },
+  {
+    "id": "q20",
+    "type": "multiple_choice",
+    "question": "What is printed by this code?\n\na, b = 3, 8\na, b = b, a\nprint(a, b)\n",
+    "options": [
+      "3 8",
+      "8 3",
+      "An error, because you must use a temporary variable to swap"
+    ],
+    "answer": "8 3",
+    "difficulty": 5
+  },
+  {
+    "id": "q21",
+    "type": "code",
+    "function_name": "assign_number",
+    "question": "Write a function called `assign_number` that creates a variable x with the value 7 and returns x.",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": 7
+      }
+    ],
+    "starter_code": "def assign_number():\n    # Create a variable x with value 7 and return it\n    pass",
+    "difficulty": 1
+  },
+  {
+    "id": "q22",
+    "type": "code",
+    "function_name": "same_value_triple",
+    "question": "Write a function called `same_value_triple` that uses a single line of code to assign the value 0 to a, b, and c (like a = b = c = 0), and then returns a list [a, b, c].",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": [0, 0, 0]
+      }
+    ],
+    "starter_code": "def same_value_triple():\n    # Use one line to assign 0 to a, b, and c, then return [a, b, c]\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q23",
+    "type": "code",
+    "function_name": "unpack_values",
+    "question": "Write a function called `unpack_values` that does the following inside the function:\n\nx, y, lang = 1, 2.5, 'Python'\n\nThen return a list [x, y, lang].",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": [1, 2.5, "Python"]
+      }
+    ],
+    "starter_code": "def unpack_values():\n    # Assign 1, 2.5, and 'Python' to x, y, and lang, then return them in a list\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q24",
+    "type": "code",
+    "function_name": "cast_examples",
+    "question": "Write a function called `cast_examples` that follows the example from the chapter:\n\ns = '10'\nn = int(s)\ncount = 4\nf = float(count)\nage = 21\ntext = str(age)\n\nThe function should create these variables and then return a list [n, f, text].",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": [10, 4.0, "21"]
+      }
+    ],
+    "starter_code": "def cast_examples():\n    # Follow the casting example and return [n, f, text]\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q25",
+    "type": "code",
+    "function_name": "reference_demo",
+    "question": "Write a function called `reference_demo` that does the following inside the function:\n\nx = 5\ny = x\nx = 'hello'\n\nThen return a list [x, y]. This should show how x and y refer to different values after x is reassigned.",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": ["hello", 5]
+      }
+    ],
+    "starter_code": "def reference_demo():\n    # Reproduce the reference example and return [x, y]\n    pass",
+    "difficulty": 4
+  }
+]

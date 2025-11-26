@@ -1,0 +1,60 @@
+
+{
+  "python101": [
+    {
+      "id": "ch2",
+      "name": "Chapter 2: Variables",
+      "content": "Learn how to create, name, assign, and reuse variables in Python, including multiple assignment, casting, references, scope, and deleting variables.",
+      "lesson": {
+        "sections": [
+          {
+            "type": "text",
+            "title": "What is a Variable?",
+            "content": "A variable is a name that points to a value in memory.\n\n- No type declaration needed in Python.\n- The type is inferred from the value you assign.\n\nExample:\n```python\nx = 5\nname = 'Sara'\nprint(x)\nprint(name)\n```\n\nOutput:\n```text\n5\nSara\n```"
+          },
+          {
+            "type": "text",
+            "title": "Rules for Naming Variables",
+            "content": "Follow these rules when naming variables:\n\n- Use letters, digits, and underscores only.\n- Do not start with a digit.\n- Names are case-sensitive (score, Score, and SCORE are different).\n- Do not use Python keywords like if, for, class.\n\nValid examples:\n```python\nage = 20\n_total = 99\nuser_name = 'ali'\n```\n\nInvalid examples:\n```python\n1name = 'error'   # starts with a digit\nclass = 10        # class is a keyword\nuser-name = 'no'  # hyphen not allowed\n```"
+          },
+          {
+            "type": "text",
+            "title": "Assigning Values",
+            "content": "Use = to assign a value to a variable:\n\n```python\nx = 7\npi = 3.14\ngreeting = 'Hello'\n```\n\nDynamic typing means the same variable can later refer to a different type:\n\n```python\nx = 10\nx = 'now text'\n```"
+          },
+          {
+            "type": "text",
+            "title": "Multiple Assignment",
+            "content": "Python allows assigning to several variables in a single line.\n\nSame value to many variables:\n```python\na = b = c = 0\nprint(a, b, c)   # 0 0 0\n```\n\nDifferent values at once:\n```python\nx, y, lang = 1, 2.5, 'Python'\nprint(x, y, lang)   # 1 2.5 Python\n```"
+          },
+          {
+            "type": "text",
+            "title": "Type Casting (Converting Values)",
+            "content": "You can convert values between basic types using casting functions:\n\n- int(value)   convert to integer\n- float(value) convert to floating-point number\n- str(value)   convert to string\n\nExample:\n```python\ns = '10'\nn = int(s)          # '10' -> 10\n\ncount = 4\nf = float(count)    # 4 -> 4.0\n\nage = 21\ntext = str(age)     # 21 -> '21'\n\nprint(n, f, text)\n```\n\nOutput:\n```text\n10 4.0 21\n```"
+          },
+          {
+            "type": "text",
+            "title": "Variables as References",
+            "content": "In Python, variables hold references to objects.\n\n```python\nx = 5\ny = x\n```\n\nHere, x and y both refer to the same integer object 5.\n\nIf we reassign x:\n```python\nx = 'hello'\n```\nPython creates a new string object and makes x refer to it. y still refers to 5.\n\n```python\nprint(x)  # hello\nprint(y)  # 5\n```\n\nIf we also change y:\n```python\ny = 'world'\n```\nx and y now refer to different string objects, and 5 no longer has any variable name pointing to it."
+          },
+          {
+            "type": "text",
+            "title": "Variable Scope (Local vs Global)",
+            "content": "Scope decides **where** a variable can be used.\n\n- A variable created **inside a function** is **local** to that function.\n- A variable created at the **top level of a file** is usually **global** in that file.\n\nLocal example:\n```python\nname = 'outer'\n\ndef show():\n    name = 'inner'     # local to show()\n    print(name)\n\nshow()\nprint(name)\n```\nOutput:\n```text\ninner\nouter\n```\n\nUsing a global variable inside a function:\n```python\ncount = 0\n\ndef add_one():\n    global count\n    count = count + 1\n\nadd_one()\nprint(count)  # 1\n```\n\n- Use global variables **sparingly**; in real projects, passing values as parameters is usually cleaner."
+          },
+          {
+            "type": "text",
+            "title": "Deleting Variables with del",
+            "content": "Use the del keyword to remove a variable name from the current scope:\n\n```python\nx = 10\nprint(x)   # 10\n\ndel x\n# print(x)  # NameError if uncommented\n```\n\nAfter del x, the name x is no longer defined, and trying to use it raises a NameError."
+          },
+          {
+            "type": "text",
+            "title": "Practical Examples",
+            "content": "1. Swapping two variables without a temporary variable:\n\n```python\na, b = 3, 8\na, b = b, a\nprint(a, b)   # 8 3\n```\n\n2. Storing and printing a computed result:\n\n```python\nsentence = 'python'\nlength = len(sentence)\nprint('Number of characters:', length)\n```\n\nOutput:\n```text\nNumber of characters: 6\n```"
+          }
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,58 @@
+{
+  "python101": [
+    {
+      "id": "ch3",
+      "name": "Chapter 3: Data Types",
+      "content": "Overview of Python built-in data types: numeric, sequence, mapping, boolean, set, and a quick mention of other core types.",
+      "lesson": {
+        "sections": [
+          {
+            "type": "text",
+            "title": "Overview of Data Types",
+            "content": "A data type describes what kind of value something is and which operations are valid on it.\n\nMain built-in groups:\n- Numeric: int, float, complex\n- Sequence: str, list, tuple\n- Mapping: dict\n- Boolean: bool\n- Set: set, frozenset\n- Other: range, bytes, bytearray, memoryview"
+          },
+          {
+            "type": "text",
+            "title": "Numeric Types",
+            "content": "Numbers: int, float, complex.\n\n```python\nitems = 3          # int\nprice = 19.99      # float\nz = 2 + 5j         # complex\n\nprint(type(items), type(price), type(z))\n```"
+          },
+          {
+            "type": "text",
+            "title": "Strings (str)",
+            "content": "Text data, created with quotes.\n\n```python\nmsg = \"Hello, Python\"\nprint(msg[0])      # 'H'\nprint(msg[-1])     # 'n'\nprint(len(msg))    # length\n```"
+          },
+          {
+            "type": "text",
+            "title": "Lists (list)",
+            "content": "Ordered, mutable collection, written with [].\n\n```python\nnums = [10, 20, 30]\nmixed = [\"CS\", 101, True]\n\nprint(nums[1])   # 20\nnums.append(40)\nprint(nums)      # [10, 20, 30, 40]\n```"
+          },
+          {
+            "type": "text",
+            "title": "Tuples (tuple)",
+            "content": "Ordered, immutable collection, written with ().\n\n```python\ncoords = (4, 7)\nprint(coords[0])   # 4\n\nsingle = (5,)      # 1-element tuple\n```"
+          },
+          {
+            "type": "text",
+            "title": "Booleans (bool)",
+            "content": "Two values: True and False, used in conditions.\n\n```python\nflag = True\nprint(type(flag))      # <class 'bool'>\n\nprint(bool(1))         # True\nprint(bool(0))         # False\nprint(bool(\"\"))        # False\n```"
+          },
+          {
+            "type": "text",
+            "title": "Sets (set)",
+            "content": "Unordered collection with no duplicates.\n\n```python\ntags = {\"python\", \"backend\", \"python\"}\nprint(tags)              # {'python', 'backend'}\n\nprint(\"python\" in tags)  # True\n```"
+          },
+          {
+            "type": "text",
+            "title": "Dictionaries (dict)",
+            "content": "Key–value pairs stored in {}.\n\n```python\nstudent = {\n    \"name\": \"Liam\",\n    \"id\": 1234,\n    \"active\": True\n}\n\nprint(student[\"name\"])       # Liam\nprint(student.get(\"id\"))     # 1234\n```"
+          },
+          {
+            "type": "text",
+            "title": "Other Core Types (Quick Mention)",
+            "content": "- range(n) → sequence of numbers, often used in loops.\n- bytes, bytearray, memoryview → for binary data.\n- frozenset → like set, but immutable.\n\nDetails of how operators behave with these are covered in the Operators chapter."
+          }
+        ]
+      }
+    }
+  ]
+}
