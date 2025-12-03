@@ -1,0 +1,392 @@
+[
+  {
+    "id": "q1",
+    "type": "multiple_choice",
+    "question": "Which two main loop types does Python use for repeating code?",
+    "options": [
+      "for and while",
+      "loop and repeat",
+      "do and until"
+    ],
+    "answer": "for and while",
+    "difficulty": 1
+  },
+  {
+    "id": "q2",
+    "type": "multiple_choice",
+    "question": "What does this code do?\n\nnames = [\"Ada\", \"Linus\", \"Grace\"]\nfor name in names:\n    print(name)",
+    "options": [
+      "Prints the list three times",
+      "Prints each name on its own line",
+      "Causes an error"
+    ],
+    "answer": "Prints each name on its own line",
+    "difficulty": 1
+  },
+  {
+    "id": "q3",
+    "type": "multiple_choice",
+    "question": "What is the output of:\n\nfor i in range(3):\n    print(i)",
+    "options": [
+      "0\n1\n2",
+      "1\n2\n3",
+      "0 1 2"
+    ],
+    "answer": "0\n1\n2",
+    "difficulty": 1
+  },
+  {
+    "id": "q4",
+    "type": "multiple_choice",
+    "question": "What does enumerate() provide in this loop?\n\ncolors = [\"red\", \"green\", \"blue\"]\nfor i, color in enumerate(colors):\n    print(i, color)",
+    "options": [
+      "Only the values from the list",
+      "Only the indexes of the list",
+      "Both the index and the value"
+    ],
+    "answer": "Both the index and the value",
+    "difficulty": 2
+  },
+  {
+    "id": "q5",
+    "type": "multiple_choice",
+    "question": "What is the output of this code?\n\ncounter = 1\nwhile counter <= 3:\n    print(\"Attempt\", counter)\n    counter += 1",
+    "options": [
+      "Attempt 1\nAttempt 2\nAttempt 3",
+      "Attempt 0\nAttempt 1\nAttempt 2",
+      "Infinite loop"
+    ],
+    "answer": "Attempt 1\nAttempt 2\nAttempt 3",
+    "difficulty": 2
+  },
+  {
+    "id": "q6",
+    "type": "multiple_choice",
+    "question": "What is a common use of `while True:` when combined with `break`?",
+    "options": [
+      "To loop forever with no way to exit",
+      "To run a loop that exits when some condition inside the loop is met",
+      "To create a for loop"
+    ],
+    "answer": "To run a loop that exits when some condition inside the loop is met",
+    "difficulty": 3
+  },
+  {
+    "id": "q7",
+    "type": "multiple_choice",
+    "question": "What does `continue` do inside a loop?",
+    "options": [
+      "Exits the loop completely",
+      "Skips the rest of the current iteration and goes to the next one",
+      "Restarts the entire loop from the beginning"
+    ],
+    "answer": "Skips the rest of the current iteration and goes to the next one",
+    "difficulty": 2
+  },
+  {
+    "id": "q8",
+    "type": "multiple_choice",
+    "question": "What does `pass` do inside a loop?",
+    "options": [
+      "Stops the loop",
+      "Skips the next iteration",
+      "Does nothing (placeholder)"
+    ],
+    "answer": "Does nothing (placeholder)",
+    "difficulty": 2
+  },
+  {
+    "id": "q9",
+    "type": "multiple_choice",
+    "question": "How many coordinate pairs does this code print?\n\nfor row in range(1, 4):\n    for col in range(1, 4):\n        print(row, col)",
+    "options": [
+      "3",
+      "6",
+      "9"
+    ],
+    "answer": "9",
+    "difficulty": 4
+  },
+  {
+    "id": "q10",
+    "type": "multiple_choice",
+    "question": "Which snippet creates an infinite loop that only ends if a `break` is reached?",
+    "options": [
+      "while True:\n    pass",
+      "for i in range(10):\n    break",
+      "while x < 10:\n    x += 1"
+    ],
+    "answer": "while True:\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q11",
+    "type": "code",
+    "function_name": "sum_list",
+    "question": "Write a function called `sum_list` that takes a list of integers and returns the total sum using a `for` loop.",
+    "test_cases": [
+      {
+        "input": [[1, 2, 3]],
+        "expected": 6
+      },
+      {
+        "input": [[5]],
+        "expected": 5
+      }
+    ],
+    "starter_code": "def sum_list(nums):\n    # Use a for loop to add up the numbers\n    pass",
+    "difficulty": 1
+  },
+  {
+    "id": "q12",
+    "type": "code",
+    "function_name": "count_up_to",
+    "question": "Write a function called `count_up_to` that takes a positive integer `n` and returns a list `[1, 2, ..., n]` using a `while` loop.",
+    "test_cases": [
+      {
+        "input": [3],
+        "expected": [1, 2, 3]
+      },
+      {
+        "input": [1],
+        "expected": [1]
+      }
+    ],
+    "starter_code": "def count_up_to(n):\n    # Use a while loop to build the list\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q13",
+    "type": "code",
+    "function_name": "odd_numbers_up_to",
+    "question": "Write a function called `odd_numbers_up_to` that takes a positive integer `n` and returns a list of all odd numbers from 1 to `n` (inclusive) using a `for` loop and `continue` to skip even numbers.",
+    "test_cases": [
+      {
+        "input": [7],
+        "expected": [1, 3, 5, 7]
+      },
+      {
+        "input": [4],
+        "expected": [1, 3]
+      }
+    ],
+    "starter_code": "def odd_numbers_up_to(n):\n    # Use for and continue to skip even numbers\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q14",
+    "type": "code",
+    "function_name": "first_negative",
+    "question": "Write a function called `first_negative` that takes a list of integers and returns the first negative number it finds. If there is no negative number, return None. Use a `for` loop and `break`.",
+    "test_cases": [
+      {
+        "input": [[3, -2, -5]],
+        "expected": -2
+      },
+      {
+        "input": [[1, 2, 3]],
+        "expected": null
+      }
+    ],
+    "starter_code": "def first_negative(nums):\n    # Use a for loop and break when you find a negative\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q15",
+    "type": "code",
+    "function_name": "square_list",
+    "question": "Write a function called `square_list` that takes a list of integers and returns a new list containing the squares of those integers, using a `for` loop.",
+    "test_cases": [
+      {
+        "input": [[1, 2, 3]],
+        "expected": [1, 4, 9]
+      },
+      {
+        "input": [[-1, 0, 2]],
+        "expected": [1, 0, 4]
+      }
+    ],
+    "starter_code": "def square_list(nums):\n    # Use a for loop to build a list of squares\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q16",
+    "type": "code",
+    "function_name": "join_lines",
+    "question": "Write a function called `join_lines` that takes a list of strings and returns a single string with each item on its own line, using a loop (no `\"\\n\".join` shortcut).",
+    "test_cases": [
+      {
+        "input": [["Ada", "Linus"]],
+        "expected": "Ada\nLinus"
+      },
+      {
+        "input": [["one"]],
+        "expected": "one"
+      }
+    ],
+    "starter_code": "def join_lines(items):\n    # Use a loop to build the string with \\n\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q17",
+    "type": "code",
+    "function_name": "index_items",
+    "question": "Write a function called `index_items` that takes a list of strings and returns a list of strings in the form `'index: value'` using `for` and `enumerate`.",
+    "test_cases": [
+      {
+        "input": [["red", "green"]],
+        "expected": ["0: red", "1: green"]
+      },
+      {
+        "input": [["only"]],
+        "expected": ["0: only"]
+      }
+    ],
+    "starter_code": "def index_items(items):\n    # Use for with enumerate to build 'index: value' strings\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q18",
+    "type": "code",
+    "function_name": "count_until_q",
+    "question": "Write a function called `count_until_q` that takes a list of commands (strings). Using a `while True` loop and `break`, count how many commands you process until you see 'q'. If 'q' is not present, process all commands. Return the count.",
+    "test_cases": [
+      {
+        "input": [["run", "save", "q", "extra"]],
+        "expected": 3
+      },
+      {
+        "input": [["a", "b"]],
+        "expected": 2
+      }
+    ],
+    "starter_code": "def count_until_q(commands):\n    # Use while True and break when you see 'q'\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q19",
+    "type": "code",
+    "function_name": "build_grid",
+    "question": "Write a function called `build_grid` that takes two integers `rows` and `cols` and returns a list of strings where each string is a row of coordinate pairs like '(1,1) (1,2)'. Use nested `for` loops.",
+    "test_cases": [
+      {
+        "input": [2, 2],
+        "expected": ["(1,1) (1,2)", "(2,1) (2,2)"]
+      },
+      {
+        "input": [1, 3],
+        "expected": ["(1,1) (1,2) (1,3)"]
+      }
+    ],
+    "starter_code": "def build_grid(rows, cols):\n    # Use nested for loops to build coordinate rows\n    pass",
+    "difficulty": 5
+  },
+  {
+    "id": "q20",
+    "type": "code",
+    "function_name": "filter_non_empty",
+    "question": "Write a function called `filter_non_empty` that takes a list of strings and returns a new list containing only the non-empty strings, using a `for` loop.",
+    "test_cases": [
+      {
+        "input": [["a", "", "b"]],
+        "expected": ["a", "b"]
+      },
+      {
+        "input": [["", "x"]],
+        "expected": ["x"]
+      }
+    ],
+    "starter_code": "def filter_non_empty(words):\n    # Use a for loop to keep only non-empty strings\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q21",
+    "type": "code",
+    "function_name": "count_down",
+    "question": "Write a function called `count_down` that takes a positive integer `n` and returns a string with the numbers from `n` down to 1, each on its own line, using a `while` loop.",
+    "test_cases": [
+      {
+        "input": [3],
+        "expected": "3\n2\n1"
+      },
+      {
+        "input": [1],
+        "expected": "1"
+      }
+    ],
+    "starter_code": "def count_down(n):\n    # Use a while loop to build the lines\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q22",
+    "type": "code",
+    "function_name": "repeat_text",
+    "question": "Write a function called `repeat_text` that takes a string `text` and an integer `times` and returns a list containing `text` repeated that many times, using a loop.",
+    "test_cases": [
+      {
+        "input": ["hi", 3],
+        "expected": ["hi", "hi", "hi"]
+      },
+      {
+        "input": ["ok", 1],
+        "expected": ["ok"]
+      }
+    ],
+    "starter_code": "def repeat_text(text, times):\n    # Use a loop to append text to a list\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q23",
+    "type": "code",
+    "function_name": "skip_negatives",
+    "question": "Write a function called `skip_negatives` that takes a list of integers and returns a new list with all negative numbers removed, using a `for` loop and `continue`.",
+    "test_cases": [
+      {
+        "input": [[-1, 0, 5, -3]],
+        "expected": [0, 5]
+      },
+      {
+        "input": [[1, 2, 3]],
+        "expected": [1, 2, 3]
+      }
+    ],
+    "starter_code": "def skip_negatives(nums):\n    # Use for and continue to skip negatives\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q24",
+    "type": "code",
+    "function_name": "sum_until_limit",
+    "question": "Write a function called `sum_until_limit` that takes a list of positive integers `nums` and a `limit`. Using a loop and `break`, keep adding numbers from the list in order until the total would be greater than `limit`. Return the total that does NOT exceed the limit.",
+    "test_cases": [
+      {
+        "input": [[2, 3, 4], 5],
+        "expected": 5
+      },
+      {
+        "input": [[1, 1, 1], 10],
+        "expected": 3
+      }
+    ],
+    "starter_code": "def sum_until_limit(nums, limit):\n    # Use a loop and break before total goes over limit\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q25",
+    "type": "code",
+    "function_name": "star_triangle",
+    "question": "Write a function called `star_triangle` that takes an integer `n` and returns a string of `n` lines, where line i contains i '*' characters (1-based). Use loops.\nFor example, `star_triangle(3)` returns `\"*\\n**\\n***\"`.",
+    "test_cases": [
+      {
+        "input": [3],
+        "expected": "*\n**\n***"
+      },
+      {
+        "input": [1],
+        "expected": "*"
+      }
+    ],
+    "starter_code": "def star_triangle(n):\n    # Use loops to build the triangle pattern\n    pass",
+    "difficulty": 5
+  }
+]

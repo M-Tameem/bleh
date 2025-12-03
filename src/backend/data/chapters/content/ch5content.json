@@ -1,0 +1,38 @@
+{
+  "python101": [
+    {
+      "id": "ch5",
+      "name": "Chapter 5: Keywords",
+      "content": "Learn what Python keywords are, why they are reserved, how to list them, and how they differ from identifiers and variables.",
+      "lesson": {
+        "sections": [
+          {
+            "type": "text",
+            "title": "What Are Keywords?",
+            "content": "Keywords are special reserved words built into Python. They are part of the language syntax and cannot be used as names for variables, functions, or classes.\n\nExamples (not full list):\n`if`, `else`, `for`, `while`, `class`, `def`, `return`, `True`, `False`, `None`, `and`, `or`, `not`."
+          },
+          {
+            "type": "text",
+            "title": "Listing All Keywords",
+            "content": "Use the built-in keyword module to see all keywords for your Python version:\n\n```python\nimport keyword\n\nprint(keyword.kwlist)\n```\n\nThis prints a list like `['False', 'None', 'True', 'and', 'as', ...]`."
+          },
+          {
+            "type": "text",
+            "title": "Using a Keyword as a Name (Error)",
+            "content": "If you try to use a keyword as a variable or function name, Python raises a SyntaxError.\n\n```python\nif = 5       # invalid\nprint(if)\n```\n\nCorrect:\n```python\nvalue_if = 5\nprint(value_if)\n```"
+          },
+          {
+            "type": "text",
+            "title": "Keyword Categories",
+            "content": "**Value keywords**\n- `True`, `False`, `None`\n\n**Operator-like keywords**\n- `and`, `or`, `not`, `is`, `in`\n\n**Control flow**\n- `if`, `elif`, `else`, `for`, `while`, `break`, `continue`, `pass`, `try`, `except`, `finally`, `raise`, `assert`\n\n**Functions & classes**\n- `def`, `return`, `lambda`, `yield`, `class`\n\n**Context management**\n- `with`, `as`\n\n**Importing**\n- `import`, `from`\n\n**Scope / namespaces**\n- `global`, `nonlocal`\n\n**Async**\n- `async`, `await`"
+          },
+          {
+            "type": "text",
+            "title": "Keywords, Identifiers, and Variables",
+            "content": "**Keywords**\n- Reserved by Python; fixed set.\n- Have special meaning in the language.\n- Cannot be used as names.\n- Examples: `if`, `while`, `class`, `return`.\n\n**Identifiers**\n- Names you create: variables, functions, classes, etc.\n- Must follow naming rules and must not be a keyword.\n- Examples: `count`, `total_price`, `Student`.\n\n**Variables**\n- A type of identifier used to store values.\n\nExample:\n```python\nscore = 95\n# 'score' is a variable (identifier), 95 is the value.\n```\n"
+          }
+        ]
+      }
+    }
+  ]
+}

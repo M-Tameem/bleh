@@ -1,0 +1,322 @@
+[
+  {
+    "id": "q1",
+    "type": "multiple_choice",
+    "question": "What does a data type describe?",
+    "options": [
+      "Only how large a value is in memory",
+      "What kind of value it is and which operations are valid on it",
+      "Only how fast the program will run"
+    ],
+    "answer": "What kind of value it is and which operations are valid on it",
+    "difficulty": 1
+  },
+  {
+    "id": "q2",
+    "type": "multiple_choice",
+    "question": "Which of these is a numeric type in Python?",
+    "options": [
+      "int",
+      "str",
+      "list"
+    ],
+    "answer": "int",
+    "difficulty": 1
+  },
+  {
+    "id": "q3",
+    "type": "multiple_choice",
+    "question": "Which group contains only sequence types?",
+    "options": [
+      "str, list, tuple",
+      "int, float, complex",
+      "dict, set, bool"
+    ],
+    "answer": "str, list, tuple",
+    "difficulty": 1
+  },
+  {
+    "id": "q4",
+    "type": "multiple_choice",
+    "question": "Which built-in type is the main mapping type in Python?",
+    "options": [
+      "dict",
+      "list",
+      "tuple"
+    ],
+    "answer": "dict",
+    "difficulty": 1
+  },
+  {
+    "id": "q5",
+    "type": "multiple_choice",
+    "question": "Which pair shows the two Boolean values in Python?",
+    "options": [
+      "Yes and No",
+      "True and False",
+      "On and Off"
+    ],
+    "answer": "True and False",
+    "difficulty": 2
+  },
+  {
+    "id": "q6",
+    "type": "multiple_choice",
+    "question": "In the code below, what is the type of price?\n\nitems = 3\nprice = 19.99\nz = 2 + 5j",
+    "options": [
+      "int",
+      "float",
+      "complex"
+    ],
+    "answer": "float",
+    "difficulty": 2
+  },
+  {
+    "id": "q7",
+    "type": "multiple_choice",
+    "question": "Given msg = \"Hello, Python\", what does msg[0] return?",
+    "options": [
+      "\"H\"",
+      "\"Hello\"",
+      "\"n\""
+    ],
+    "answer": "\"H\"",
+    "difficulty": 2
+  },
+  {
+    "id": "q8",
+    "type": "multiple_choice",
+    "question": "Given msg = \"Hello, Python\", what does msg[-1] return?",
+    "options": [
+      "\"H\"",
+      "\"n\"",
+      "\"\" (empty string)"
+    ],
+    "answer": "\"n\"",
+    "difficulty": 2
+  },
+  {
+    "id": "q9",
+    "type": "multiple_choice",
+    "question": "Given msg = \"Hello, Python\", what does len(msg) return?",
+    "options": [
+      "The number of characters in msg",
+      "Always 0 for strings",
+      "The number of words in msg"
+    ],
+    "answer": "The number of characters in msg",
+    "difficulty": 2
+  },
+  {
+    "id": "q10",
+    "type": "multiple_choice",
+    "question": "Given nums = [10, 20, 30], what does nums[1] return?",
+    "options": [
+      "10",
+      "20",
+      "30"
+    ],
+    "answer": "20",
+    "difficulty": 3
+  },
+  {
+    "id": "q11",
+    "type": "multiple_choice",
+    "question": "What is the result after this code runs?\n\nnums = [10, 20, 30]\nnums.append(40)\nprint(nums)",
+    "options": [
+      "[10, 20, 30]",
+      "[10, 20, 30, 40]",
+      "[40, 10, 20, 30]"
+    ],
+    "answer": "[10, 20, 30, 40]",
+    "difficulty": 3
+  },
+  {
+    "id": "q12",
+    "type": "multiple_choice",
+    "question": "Which statement correctly compares lists and tuples in this chapter?",
+    "options": [
+      "Both lists and tuples are mutable",
+      "Lists are ordered and mutable; tuples are ordered and immutable",
+      "Lists are immutable; tuples are mutable"
+    ],
+    "answer": "Lists are ordered and mutable; tuples are ordered and immutable",
+    "difficulty": 3
+  },
+  {
+    "id": "q13",
+    "type": "multiple_choice",
+    "question": "How do you create a 1-element tuple with the value 5?",
+    "options": [
+      "(5)",
+      "(5,)",
+      "[5,]"
+    ],
+    "answer": "(5,)",
+    "difficulty": 3
+  },
+  {
+    "id": "q14",
+    "type": "multiple_choice",
+    "question": "Which of these calls returns False based on the examples?",
+    "options": [
+      "bool(1)",
+      "bool(0)",
+      "bool(\"Hello\")"
+    ],
+    "answer": "bool(0)",
+    "difficulty": 3
+  },
+  {
+    "id": "q15",
+    "type": "multiple_choice",
+    "question": "Given tags = {\"python\", \"backend\", \"python\"}, what is printed by print(tags)?",
+    "options": [
+      "{\"python\", \"backend\", \"python\"}",
+      "{\"python\", \"backend\"}",
+      "An error, because sets cannot contain strings"
+    ],
+    "answer": "{\"python\", \"backend\"}",
+    "difficulty": 4
+  },
+  {
+    "id": "q16",
+    "type": "multiple_choice",
+    "question": "What does the expression \"python\" in tags check?",
+    "options": [
+      "Whether tags is equal to \"python\"",
+      "Whether the string \"python\" is an element of the set tags",
+      "Whether tags contains only one element"
+    ],
+    "answer": "Whether the string \"python\" is an element of the set tags",
+    "difficulty": 4
+  },
+  {
+    "id": "q17",
+    "type": "multiple_choice",
+    "question": "Given the dictionary:\n\nstudent = {\n    \"name\": \"Liam\",\n    \"id\": 1234,\n    \"active\": True\n}\n\nWhat does student[\"name\"] return?",
+    "options": [
+      "\"Liam\"",
+      "1234",
+      "True"
+    ],
+    "answer": "\"Liam\"",
+    "difficulty": 4
+  },
+  {
+    "id": "q18",
+    "type": "multiple_choice",
+    "question": "According to this chapter, what does range(n) represent?",
+    "options": [
+      "A single integer equal to n",
+      "A sequence of numbers, often used in loops",
+      "A mapping from 0 to n"
+    ],
+    "answer": "A sequence of numbers, often used in loops",
+    "difficulty": 5
+  },
+  {
+    "id": "q19",
+    "type": "multiple_choice",
+    "question": "How is frozenset described in this chapter?",
+    "options": [
+      "Exactly the same as list",
+      "Like set, but immutable",
+      "A type that only stores numbers"
+    ],
+    "answer": "Like set, but immutable",
+    "difficulty": 5
+  },
+  {
+    "id": "q20",
+    "type": "code",
+    "function_name": "first_char",
+    "question": "Write a function called `first_char` that takes a string msg and returns the first character of msg (like msg[0] in the example).",
+    "test_cases": [
+      {
+        "input": ["Hello"],
+        "expected": "H"
+      },
+      {
+        "input": ["Python"],
+        "expected": "P"
+      }
+    ],
+    "starter_code": "def first_char(msg):\n    # Return the first character of msg\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q21",
+    "type": "code",
+    "function_name": "string_length",
+    "question": "Write a function called `string_length` that takes a string msg and returns the number of characters in msg using len(msg).",
+    "test_cases": [
+      {
+        "input": ["Hello"],
+        "expected": 5
+      },
+      {
+        "input": ["Hello, Python"],
+        "expected": 13
+      }
+    ],
+    "starter_code": "def string_length(msg):\n    # Return the length of msg\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q22",
+    "type": "code",
+    "function_name": "append_example",
+    "question": "Inside the function `append_example`, create a list nums = [10, 20, 30], append 40 to it using nums.append(40), and then return nums.",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": [10, 20, 30, 40]
+      }
+    ],
+    "starter_code": "def append_example():\n    # Create nums, append 40, and return the list\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q23",
+    "type": "code",
+    "function_name": "tuple_first",
+    "question": "Inside the function `tuple_first`, create a tuple coords = (4, 7) and return the first element of coords (coords[0]).",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": 4
+      }
+    ],
+    "starter_code": "def tuple_first():\n    # Create coords and return its first element\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q24",
+    "type": "code",
+    "function_name": "bool_examples",
+    "question": "Write a function called `bool_examples` that returns a list [bool(1), bool(0), bool(\"\")], following the examples in the Booleans section.",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": [true, false, false]
+      }
+    ],
+    "starter_code": "def bool_examples():\n    # Return [bool(1), bool(0), bool(\"\")]\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q25",
+    "type": "code",
+    "function_name": "make_student_dict",
+    "question": "Write a function called `make_student_dict` that creates the dictionary shown in the chapter:\n\nstudent = {\n    \"name\": \"Liam\",\n    \"id\": 1234,\n    \"active\": True\n}\n\nThe function should create this dictionary and return student.get(\"active\").",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": true
+      }
+    ],
+    "starter_code": "def make_student_dict():\n    # Create the student dictionary and return student.get(\"active\")\n    pass",
+    "difficulty": 4
+  }
+]

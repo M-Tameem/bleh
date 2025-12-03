@@ -1,0 +1,63 @@
+{
+  "python101": [
+    {
+      "id": "ch8",
+      "name": "Chapter 8: Functions",
+      "content": "Learn how to define, call, and reuse functions in Python, including parameters, default and keyword arguments, *args/**kwargs, inner functions, lambda, return values, mutability, and recursion.",
+      "lesson": {
+        "sections": [
+          {
+            "type": "text",
+            "title": "What Is a Function?",
+            "content": "A function is a named block of code that can be run (called) many times, often with different inputs.\n\n```python\ndef greet():\n    print(\"Hello!\")\n\ngreet()  # call\n```"
+          },
+          {
+            "type": "text",
+            "title": "Defining and Calling a Function",
+            "content": "Use the `def` keyword, a name, parameters (optional), and a body.\n\n```python\ndef welcome(name):\n    print(\"Welcome,\", name)\n\nwelcome(\"Aisha\")\nwelcome(\"Omar\")\n```"
+          },
+          {
+            "type": "text",
+            "title": "Parameters and Return Values",
+            "content": "Parameters receive input; `return` sends a result back to the caller.\n\n```python\ndef add(a, b):\n    return a + b\n\nresult = add(3, 7)\nprint(result)  # 10\n```"
+          },
+          {
+            "type": "text",
+            "title": "Positional, Keyword, and Default Arguments",
+            "content": "**Positional**: match by order.\n\n```python\ndef describe(city, country):\n    print(city, \"is in\", country)\n\ndescribe(\"Toronto\", \"Canada\")\n```\n\n**Keyword**: match by name, order doesn’t matter.\n\n```python\ndescribe(country=\"Japan\", city=\"Tokyo\")\n```\n\n**Default**: value used if argument is missing.\n\n```python\ndef power(base, exp=2):\n    return base ** exp\n\nprint(power(5))    # 25 (uses default exp=2)\nprint(power(2, 3)) # 8\n```"
+          },
+          {
+            "type": "text",
+            "title": "*args and **kwargs",
+            "content": "`*args` collects extra positional arguments, `**kwargs` collects extra keyword arguments.\n\n```python\ndef log(*args, **kwargs):\n    print(\"ARGS:\", args)\n    print(\"KWARGS:\", kwargs)\n\nlog(\"start\", 1, mode=\"debug\", user=\"admin\")\n```\n\nHere `args` is a tuple of extra positional values, and `kwargs` is a dict of extra named values."
+          },
+          {
+            "type": "text",
+            "title": "Inner (Nested) Functions",
+            "content": "A function defined inside another can use variables from the outer function.\n\n```python\ndef make_greeter(prefix):\n    def greet(name):\n        print(prefix, name)\n    return greet\n\nhi = make_greeter(\"Hi\")\nhi(\"Sam\")  # Hi Sam\n```"
+          },
+          {
+            "type": "text",
+            "title": "Lambda (Anonymous) Functions",
+            "content": "A lambda is a small, unnamed function, often used for simple expressions.\n\n```python\nsquare = lambda x: x * x\n\nprint(square(6))  # 36\n```"
+          },
+          {
+            "type": "text",
+            "title": "Return and None",
+            "content": "`return` ends the function. If no value is given, it returns `None`.\n\n```python\ndef triple(n):\n    return n * 3\n\nvalue = triple(4)\nprint(value)  # 12\n\ndef show(msg):\n    print(msg)\n\nresult = show(\"hello\")\nprint(result)  # None\n```"
+          },
+          {
+            "type": "text",
+            "title": "Mutable vs Immutable Arguments",
+            "content": "Python passes references to objects. **Mutable** objects (like lists) can be changed inside a function; **immutable** ones (like ints, strings) cannot.\n\n```python\ndef change_list(data):\n    data.append(99)\n\nnums = [1, 2, 3]\nchange_list(nums)\nprint(nums)  # [1, 2, 3, 99]\n\ndef change_number(n):\n    n = 99\n\nx = 10\nchange_number(x)\nprint(x)      # 10 (unchanged)\n```"
+          },
+          {
+            "type": "text",
+            "title": "Recursive Functions",
+            "content": "A recursive function calls itself. Always define a base case to stop.\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n\nprint(factorial(4))  # 24\n```\n\nHere, `factorial` keeps calling itself with smaller `n` until it reaches 0."
+          }
+        ]
+      }
+    }
+  ]
+}

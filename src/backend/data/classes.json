@@ -1,0 +1,683 @@
+{
+  "Beginner Python": {
+    "id": "PY1",
+    "name": "Beginner Python",
+    "description": "The fundamentals of coding in Python",
+    "students": [
+      {
+        "id": "student1",
+        "firstName": "John",
+        "lastName": "Smith",
+        "email": "jsmith@uoguelph.ca",
+        "grade": 34,
+        "workCompleted": 12,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 12,
+            "grade": 34
+          }
+        ]
+      },
+      {
+        "id": "student2",
+        "firstName": "William",
+        "lastName": "Johnson",
+        "email": "wjohnson@uoguelph.ca",
+        "grade": 57,
+        "workCompleted": 68,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 68,
+            "grade": 57
+          }
+        ]
+      },
+      {
+        "id": "student3",
+        "firstName": "Emma",
+        "lastName": "Williams",
+        "email": "ewilliams@uoguelph.ca",
+        "grade": 91,
+        "workCompleted": 94,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 94,
+            "grade": 91
+          }
+        ]
+      },
+      {
+        "id": "student4",
+        "firstName": "Olivia",
+        "lastName": "Brown",
+        "email": "obrown@uoguelph.ca",
+        "grade": 4,
+        "workCompleted": 3,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 3,
+            "grade": 4
+          }
+        ]
+      },
+      {
+        "id": "student5",
+        "firstName": "James",
+        "lastName": "Jones",
+        "email": "jjones@uoguelph.ca",
+        "grade": 77,
+        "workCompleted": 82,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 82,
+            "grade": 77
+          }
+        ]
+      },
+      {
+        "id": "student6",
+        "firstName": "Sophia",
+        "lastName": "Garcia",
+        "email": "sgarcia@uoguelph.ca",
+        "grade": 19,
+        "workCompleted": 21,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 21,
+            "grade": 19
+          }
+        ]
+      },
+      {
+        "id": "student7",
+        "firstName": "Michael",
+        "lastName": "Miller",
+        "email": "mmiller@uoguelph.ca",
+        "grade": 62,
+        "workCompleted": 59,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 59,
+            "grade": 62
+          }
+        ]
+      },
+      {
+        "id": "student8",
+        "firstName": "Isabella",
+        "lastName": "Davis",
+        "email": "idavis@uoguelph.ca",
+        "grade": 48,
+        "workCompleted": 41,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 41,
+            "grade": 48
+          }
+        ]
+      },
+      {
+        "id": "student9",
+        "firstName": "Benjamin",
+        "lastName": "Rodriguez",
+        "email": "brodriguez@uoguelph.ca",
+        "grade": 13,
+        "workCompleted": 9,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 9,
+            "grade": 13
+          }
+        ]
+      },
+      {
+        "id": "student10",
+        "firstName": "Mia",
+        "lastName": "Martinez",
+        "email": "mmartinez@uoguelph.ca",
+        "grade": 84,
+        "workCompleted": 87,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 87,
+            "grade": 84
+          }
+        ]
+      }
+    ]
+  },
+  "Intermediate Python": {
+    "id": "PY2",
+    "name": "Intermediate Python",
+    "description": "Exploring more challenging implementations of Python",
+    "students": [
+      {
+        "id": "student11",
+        "firstName": "Alice",
+        "lastName": "Thompson",
+        "email": "athompson@uoguelph.ca",
+        "grade": 72,
+        "workCompleted": 72,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 71,
+            "grade": 72
+          },
+          {
+            "course": "Variables",
+            "complete": 73,
+            "grade": 72
+          },
+          {
+            "course": "Data Types",
+            "complete": 70,
+            "grade": 72
+          },
+          {
+            "course": "Operators",
+            "complete": 74,
+            "grade": 72
+          }
+        ]
+      },
+      {
+        "id": "student12",
+        "firstName": "Bob",
+        "lastName": "Anderson",
+        "email": "banderson@uoguelph.ca",
+        "grade": 66,
+        "workCompleted": 66,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 63,
+            "grade": 66
+          },
+          {
+            "course": "Variables",
+            "complete": 69,
+            "grade": 66
+          },
+          {
+            "course": "Data Types",
+            "complete": 62,
+            "grade": 66
+          },
+          {
+            "course": "Operators",
+            "complete": 70,
+            "grade": 66
+          }
+        ]
+      },
+      {
+        "id": "student13",
+        "firstName": "Carlos",
+        "lastName": "Rivera",
+        "email": "crivera@uoguelph.ca",
+        "grade": 81,
+        "workCompleted": 81,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 85,
+            "grade": 81
+          },
+          {
+            "course": "Variables",
+            "complete": 79,
+            "grade": 81
+          },
+          {
+            "course": "Data Types",
+            "complete": 83,
+            "grade": 81
+          },
+          {
+            "course": "Operators",
+            "complete": 77,
+            "grade": 81
+          }
+        ]
+      },
+      {
+        "id": "student14",
+        "firstName": "Diana",
+        "lastName": "Patel",
+        "email": "dpatel@uoguelph.ca",
+        "grade": 64,
+        "workCompleted": 58,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 61,
+            "grade": 59
+          },
+          {
+            "course": "Variables",
+            "complete": 55,
+            "grade": 80
+          },
+          {
+            "course": "Data Types",
+            "complete": 60,
+            "grade": 59
+          },
+          {
+            "course": "Operators",
+            "complete": 58,
+            "grade": 59
+          }
+        ]
+      },
+      {
+        "id": "student15",
+        "firstName": "Ethan",
+        "lastName": "Kim",
+        "email": "ekim@uoguelph.ca",
+        "grade": 93,
+        "workCompleted": 93,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 94,
+            "grade": 93
+          },
+          {
+            "course": "Variables",
+            "complete": 92,
+            "grade": 93
+          },
+          {
+            "course": "Data Types",
+            "complete": 90,
+            "grade": 93
+          },
+          {
+            "course": "Operators",
+            "complete": 96,
+            "grade": 93
+          }
+        ]
+      },
+      {
+        "id": "student16",
+        "firstName": "Fatima",
+        "lastName": "Hassan",
+        "email": "fhassan@uoguelph.ca",
+        "grade": 68,
+        "workCompleted": 65,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 80,
+            "grade": 78
+          },
+          {
+            "course": "Variables",
+            "complete": 77,
+            "grade": 40
+          },
+          {
+            "course": "Data Types",
+            "complete": 75,
+            "grade": 78
+          },
+          {
+            "course": "Operators",
+            "complete": 30,
+            "grade": 78
+          }
+        ]
+      },
+      {
+        "id": "student17",
+        "firstName": "Gabriel",
+        "lastName": "Santos",
+        "email": "gsantos@uoguelph.ca",
+        "grade": 88,
+        "workCompleted": 88,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 90,
+            "grade": 88
+          },
+          {
+            "course": "Variables",
+            "complete": 87,
+            "grade": 88
+          },
+          {
+            "course": "Data Types",
+            "complete": 89,
+            "grade": 88
+          },
+          {
+            "course": "Operators",
+            "complete": 86,
+            "grade": 88
+          }
+        ]
+      }
+    ]
+  },
+  "Advanced Python": {
+    "id": "PY3",
+    "name": "Advanced Python",
+    "description": "The application of Python in real-world systems",
+    "students": [
+      {
+        "id": "student18",
+        "firstName": "Hannah",
+        "lastName": "Chen",
+        "email": "hchen@uoguelph.ca",
+        "grade": 95,
+        "workCompleted": 95,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 96,
+            "grade": 95
+          },
+          {
+            "course": "Variables",
+            "complete": 94,
+            "grade": 95
+          },
+          {
+            "course": "Data Types",
+            "complete": 97,
+            "grade": 95
+          },
+          {
+            "course": "Operators",
+            "complete": 93,
+            "grade": 95
+          },
+          {
+            "course": "Keywords",
+            "complete": 98,
+            "grade": 95
+          },
+          {
+            "course": "Conditional Statements (Control Flow)",
+            "complete": 96,
+            "grade": 95
+          },
+          {
+            "course": "Loops",
+            "complete": 95,
+            "grade": 95
+          },
+          {
+            "course": "Functions",
+            "complete": 94,
+            "grade": 95
+          }
+        ]
+      },
+      {
+        "id": "student19",
+        "firstName": "Isaac",
+        "lastName": "O'Brien",
+        "email": "iobrien@uoguelph.ca",
+        "grade": 48,
+        "workCompleted": 60,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 63,
+            "grade": 2
+          },
+          {
+            "course": "Variables",
+            "complete": 59,
+            "grade": 61
+          },
+          {
+            "course": "Data Types",
+            "complete": 62,
+            "grade": 23
+          },
+          {
+            "course": "Operators",
+            "complete": 60,
+            "grade": 61
+          },
+          {
+            "course": "Keywords",
+            "complete": 64,
+            "grade": 61
+          },
+          {
+            "course": "Conditional Statements (Control Flow)",
+            "complete": 58,
+            "grade": 61
+          },
+          {
+            "course": "Loops",
+            "complete": 61,
+            "grade": 61
+          },
+          {
+            "course": "Functions",
+            "complete": 60,
+            "grade": 61
+          }
+        ]
+      },
+      {
+        "id": "student20",
+        "firstName": "Julia",
+        "lastName": "Kowalski",
+        "email": "jkowalski@uoguelph.ca",
+        "grade": 87,
+        "workCompleted": 87,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 88,
+            "grade": 87
+          },
+          {
+            "course": "Variables",
+            "complete": 89,
+            "grade": 87
+          },
+          {
+            "course": "Data Types",
+            "complete": 85,
+            "grade": 87
+          },
+          {
+            "course": "Operators",
+            "complete": 90,
+            "grade": 87
+          },
+          {
+            "course": "Keywords",
+            "complete": 84,
+            "grade": 87
+          },
+          {
+            "course": "Conditional Statements (Control Flow)",
+            "complete": 86,
+            "grade": 87
+          },
+          {
+            "course": "Loops",
+            "complete": 89,
+            "grade": 87
+          },
+          {
+            "course": "Functions",
+            "complete": 85,
+            "grade": 87
+          }
+        ]
+      },
+      {
+        "id": "student21",
+        "firstName": "Kevin",
+        "lastName": "Nguyen",
+        "email": "knguyen@uoguelph.ca",
+        "grade": 43,
+        "workCompleted": 52,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 50,
+            "grade": 20
+          },
+          {
+            "course": "Variables",
+            "complete": 55,
+            "grade": 53
+          },
+          {
+            "course": "Data Types",
+            "complete": 52,
+            "grade": 53
+          },
+          {
+            "course": "Operators",
+            "complete": 49,
+            "grade": 53
+          },
+          {
+            "course": "Keywords",
+            "complete": 57,
+            "grade": 53
+          },
+          {
+            "course": "Conditional Statements (Control Flow)",
+            "complete": 51,
+            "grade": 12
+          },
+          {
+            "course": "Loops",
+            "complete": 54,
+            "grade": 53
+          },
+          {
+            "course": "Functions",
+            "complete": 50,
+            "grade": 53
+          }
+        ]
+      },
+      {
+        "id": "student22",
+        "firstName": "Layla",
+        "lastName": "Ahmed",
+        "email": "lahmed@uoguelph.ca",
+        "grade": 74,
+        "workCompleted": 74,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 73,
+            "grade": 74
+          },
+          {
+            "course": "Variables",
+            "complete": 75,
+            "grade": 74
+          },
+          {
+            "course": "Data Types",
+            "complete": 76,
+            "grade": 74
+          },
+          {
+            "course": "Operators",
+            "complete": 72,
+            "grade": 74
+          },
+          {
+            "course": "Keywords",
+            "complete": 71,
+            "grade": 74
+          },
+          {
+            "course": "Conditional Statements (Control Flow)",
+            "complete": 77,
+            "grade": 74
+          },
+          {
+            "course": "Loops",
+            "complete": 73,
+            "grade": 74
+          },
+          {
+            "course": "Functions",
+            "complete": 75,
+            "grade": 74
+          }
+        ]
+      },
+      {
+        "id": "student23",
+        "firstName": "Marcus",
+        "lastName": "Johnson",
+        "email": "mjohnson@uoguelph.ca",
+        "grade": 82,
+        "workCompleted": 81,
+        "workAssigned": [
+          {
+            "course": "Introduction to Python & Basic I/O",
+            "complete": 80,
+            "grade": 82
+          },
+          {
+            "course": "Variables",
+            "complete": 83,
+            "grade": 82
+          },
+          {
+            "course": "Data Types",
+            "complete": 85,
+            "grade": 82
+          },
+          {
+            "course": "Operators",
+            "complete": 81,
+            "grade": 82
+          },
+          {
+            "course": "Keywords",
+            "complete": 79,
+            "grade": 82
+          },
+          {
+            "course": "Conditional Statements (Control Flow)",
+            "complete": 84,
+            "grade": 82
+          },
+          {
+            "course": "Loops",
+            "complete": 82,
+            "grade": 82
+          },
+          {
+            "course": "Functions",
+            "complete": 80,
+            "grade": 82
+          }
+        ]
+      }
+    ]
+  }
+}

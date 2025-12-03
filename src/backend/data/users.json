@@ -1,0 +1,11 @@
+{
+    "student1": {
+        "password": "password",
+        "role": "student",
+        "student_id": "1"
+    },
+    "teacher1": {
+        "password": "password",
+        "role": "teacher"
+    }
+}

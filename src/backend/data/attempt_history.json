@@ -1,0 +1,244 @@
+{
+    "student1": {
+        "python101": {
+            "ch1": [
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "Readable code that is easy to understand",
+                    "timestamp": "2025-11-26T10:35:07.624877",
+                    "question_id": "q2",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "code",
+                    "input": "def hello_python():\n    return \"Hello, World!\"\n",
+                    "timestamp": "2025-11-26T10:35:25.248879",
+                    "question_id": "q20",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "str",
+                    "timestamp": "2025-11-26T10:35:32.014237",
+                    "question_id": "q13",
+                    "mode": "test"
+                },
+                {
+                    "correct": false,
+                    "type": "code",
+                    "input": "def format_xy(x, y):\n    # Return a string like: x = 10 y = 20\n    return \"x = {x} y = {y}\"",
+                    "timestamp": "2025-11-26T10:35:53.559652",
+                    "question_id": "q23",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "code",
+                    "input": "def make_hi_message(name):\n    return \"Hi \" + name\n",
+                    "timestamp": "2025-11-26T11:25:47.993378",
+                    "question_id": "q22",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "To convert the text from input() into an integer so you can do arithmetic",
+                    "timestamp": "2025-11-26T11:25:56.799136",
+                    "question_id": "q18",
+                    "mode": "test"
+                },
+                {
+                    "correct": false,
+                    "type": "code",
+                    "input": "def next_year_message(age):\n    return \"Next year you will be \" + (age + 1)",
+                    "timestamp": "2025-11-26T11:26:20.633957",
+                    "question_id": "q24",
+                    "mode": "test"
+                },
+                {
+                    "correct": false,
+                    "type": "code",
+                    "input": "def next_year_message(age):\n    new  = age + 1\n    return \"Next year you will be \" + new",
+                    "timestamp": "2025-11-26T11:26:33.765033",
+                    "question_id": "q24",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "code",
+                    "input": "def next_year_message(age):\n    return \"Next year you will be \" + str(age + 1)",
+                    "timestamp": "2025-11-26T11:26:47.695200",
+                    "question_id": "q24",
+                    "mode": "test"
+                }
+            ],
+            "ch2": [],
+            "ch3": [
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "What kind of value it is and which operations are valid on it",
+                    "timestamp": "2025-11-24T02:29:27.598029",
+                    "question_id": "q1",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "code",
+                    "input": "def first_char(msg):\n    return msg[0]\n    pass",
+                    "timestamp": "2025-11-24T02:29:41.803152",
+                    "question_id": "q20",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "code",
+                    "input": "def string_length(msg):\n    return len(msg)\n    pass",
+                    "timestamp": "2025-11-24T02:31:55.066047",
+                    "question_id": "q21",
+                    "mode": "test"
+                },
+                {
+                    "correct": false,
+                    "type": "code",
+                    "input": "def append_example():\n    nums = [10,20,30,40]\n    nums.append(40)\n    return nums\n    pass",
+                    "timestamp": "2025-11-24T02:32:54.633128",
+                    "question_id": "q22",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "code",
+                    "input": "def append_example():\n    nums = [10,20,30]\n    nums.append(40)\n    return nums\n    pass",
+                    "timestamp": "2025-11-24T02:32:58.825678",
+                    "question_id": "q22",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "code",
+                    "input": "def tuple_first():\n    return 4\n    pass",
+                    "timestamp": "2025-11-24T02:42:11.514817",
+                    "question_id": "q23",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "code",
+                    "input": "def tuple_first():\n    return 4\n    pass",
+                    "timestamp": "2025-11-24T02:42:20.395066",
+                    "question_id": "q23",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "True and False",
+                    "timestamp": "2025-11-24T02:43:55.018619",
+                    "question_id": "q5",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "True and False",
+                    "timestamp": "2025-11-24T02:46:37.710579",
+                    "question_id": "q5",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "What kind of value it is and which operations are valid on it",
+                    "timestamp": "2025-11-24T02:49:30.220796",
+                    "question_id": "q1",
+                    "mode": "practice"
+                },
+                {
+                    "correct": false,
+                    "type": "multiple_choice",
+                    "input": "dict, set, bool",
+                    "timestamp": "2025-11-26T11:34:06.246618",
+                    "question_id": "q3",
+                    "mode": "test"
+                },
+                {
+                    "correct": false,
+                    "type": "multiple_choice",
+                    "input": "int, float, complex",
+                    "timestamp": "2025-11-26T11:34:08.152020",
+                    "question_id": "q3",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "str, list, tuple",
+                    "timestamp": "2025-11-26T11:34:09.503431",
+                    "question_id": "q3",
+                    "mode": "test"
+                },
+                {
+                    "correct": false,
+                    "type": "code",
+                    "input": "def make_student_dict():\n    student = {\n    \"name\": \"Liam\",\n    \"id\": 1234,\n    \"active\": True}\n    return student",
+                    "timestamp": "2025-11-26T11:34:40.973870",
+                    "question_id": "q25",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "code",
+                    "input": "def make_student_dict():\n    student = {\"name\": \"Liam\",\"id\": 1234,\"active\": True}\n    return  student.get(\"active\")",
+                    "timestamp": "2025-11-26T11:34:58.159813",
+                    "question_id": "q25",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "20",
+                    "timestamp": "2025-11-26T11:35:03.416310",
+                    "question_id": "q10",
+                    "mode": "test"
+                },
+                {
+                    "correct": false,
+                    "type": "multiple_choice",
+                    "input": "{\"python\", \"backend\", \"python\"}",
+                    "timestamp": "2025-11-26T11:35:11.734725",
+                    "question_id": "q15",
+                    "mode": "test"
+                },
+                {
+                    "correct": false,
+                    "type": "multiple_choice",
+                    "input": "An error, because sets cannot contain strings",
+                    "timestamp": "2025-11-26T11:35:14.107052",
+                    "question_id": "q15",
+                    "mode": "test"
+                },
+                {
+                    "correct": false,
+                    "type": "multiple_choice",
+                    "input": "An error, because sets cannot contain strings",
+                    "timestamp": "2025-11-26T11:35:16.040716",
+                    "question_id": "q15",
+                    "mode": "test"
+                },
+                {
+                    "correct": true,
+                    "type": "multiple_choice",
+                    "input": "{\"python\", \"backend\"}",
+                    "timestamp": "2025-11-26T11:35:17.874291",
+                    "question_id": "q15",
+                    "mode": "test"
+                }
+            ],
+            "ch4": []
+        }
+    }
+}

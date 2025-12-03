@@ -1,0 +1,311 @@
+[
+  {
+    "id": "q1",
+    "type": "multiple_choice",
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["func", "def", "lambda"],
+    "answer": "def",
+    "difficulty": 1
+  },
+  {
+    "id": "q2",
+    "type": "multiple_choice",
+    "question": "What does it mean to \"call\" a function?",
+    "options": [
+      "Create the function for the first time",
+      "Run the code inside the function",
+      "Delete the function from the program"
+    ],
+    "answer": "Run the code inside the function",
+    "difficulty": 1
+  },
+  {
+    "id": "q3",
+    "type": "multiple_choice",
+    "question": "What is the output of:\n\ndef greet():\n    print(\"Hi\")\n\nresult = greet()\nprint(result)",
+    "options": [
+      "Hi\nNone",
+      "Hi\nHi",
+      "None"
+    ],
+    "answer": "Hi\nNone",
+    "difficulty": 2
+  },
+  {
+    "id": "q4",
+    "type": "multiple_choice",
+    "question": "Which statement is TRUE about `return` in a function?",
+    "options": [
+      "`return` prints a value to the screen.",
+      "`return` sends a value back to the caller and ends the function.",
+      "`return` is the same as `print`."
+    ],
+    "answer": "`return` sends a value back to the caller and ends the function.",
+    "difficulty": 2
+  },
+  {
+    "id": "q5",
+    "type": "multiple_choice",
+    "question": "Given:\n\ndef power(base, exp=2):\n    return base ** exp\n\nWhat is `power(4)`?",
+    "options": ["8", "16", "Error: missing argument"],
+    "answer": "16",
+    "difficulty": 3
+  },
+  {
+    "id": "q6",
+    "type": "multiple_choice",
+    "question": "Given:\n\ndef describe(city, country):\n    print(city, \"is in\", country)\n\nWhich call uses keyword arguments?",
+    "options": [
+      "describe(\"Paris\", \"France\")",
+      "describe(city=\"Paris\", country=\"France\")",
+      "describe(city, country)"
+    ],
+    "answer": "describe(city=\"Paris\", country=\"France\")",
+    "difficulty": 3
+  },
+  {
+    "id": "q7",
+    "type": "multiple_choice",
+    "question": "In a function definition, what does `*args` collect?",
+    "options": [
+      "Extra positional arguments as a tuple",
+      "Extra keyword arguments as a dict",
+      "Local variables as a list"
+    ],
+    "answer": "Extra positional arguments as a tuple",
+    "difficulty": 4
+  },
+  {
+    "id": "q8",
+    "type": "multiple_choice",
+    "question": "Which of the following is MOST important in a recursive function?",
+    "options": [
+      "Using `*args` and `**kwargs` together",
+      "A base case that stops the recursion",
+      "Only using default arguments"
+    ],
+    "answer": "A base case that stops the recursion",
+    "difficulty": 4
+  },
+  {
+    "id": "q9",
+    "type": "code",
+    "function_name": "greet",
+    "question": "Write a function called `greet` that takes a name and returns the string `\"Hello, {name}!\"`.",
+    "test_cases": [
+      {
+        "input": ["Aisha"],
+        "expected": "Hello, Aisha!"
+      },
+      {
+        "input": ["Omar"],
+        "expected": "Hello, Omar!"
+      }
+    ],
+    "starter_code": "def greet(name):\n    # Return a greeting like \"Hello, name!\"\n    pass",
+    "difficulty": 1
+  },
+  {
+    "id": "q10",
+    "type": "code",
+    "function_name": "add",
+    "question": "Write a function called `add` that takes two numbers `a` and `b` and returns their sum.",
+    "test_cases": [
+      {
+        "input": [2, 3],
+        "expected": 5
+      },
+      {
+        "input": [-1, 5],
+        "expected": 4
+      }
+    ],
+    "starter_code": "def add(a, b):\n    # Return the sum of a and b\n    pass",
+    "difficulty": 1
+  },
+  {
+    "id": "q11",
+    "type": "code",
+    "function_name": "power",
+    "question": "Write a function called `power` that takes `base` and an optional `exp` (default is 2) and returns `base ** exp`.",
+    "test_cases": [
+      {
+        "input": [3, 3],
+        "expected": 27
+      },
+      {
+        "input": [4],
+        "expected": 16
+      }
+    ],
+    "starter_code": "def power(base, exp=2):\n    # Use exp=2 as the default exponent\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q12",
+    "type": "code",
+    "function_name": "describe_city",
+    "question": "Write a function called `describe_city` that takes a `city` and an optional `country` (default \"Canada\") and returns the string `\"{city} is in {country}\"`.",
+    "test_cases": [
+      {
+        "input": ["Toronto"],
+        "expected": "Toronto is in Canada"
+      },
+      {
+        "input": ["Tokyo", "Japan"],
+        "expected": "Tokyo is in Japan"
+      }
+    ],
+    "starter_code": "def describe_city(city, country=\"Canada\"):\n    # Return a string describing the city and country\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q13",
+    "type": "code",
+    "function_name": "sum_all",
+    "question": "Write a function called `sum_all` that accepts any number of positional arguments using `*args` and returns their total sum. If no numbers are passed, return 0.",
+    "test_cases": [
+      {
+        "input": [1, 2, 3],
+        "expected": 6
+      },
+      {
+        "input": [],
+        "expected": 0
+      }
+    ],
+    "starter_code": "def sum_all(*args):\n    # Use *args to accept any number of numbers\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q14",
+    "type": "code",
+    "function_name": "log_values",
+    "question": "Write a function called `log_values` that takes any number of keyword arguments using `**kwargs` and returns a list of strings in the form \"key=value\" for each pair, in any order.",
+    "test_cases": [
+      {
+        "input": [],
+        "expected": []
+      },
+      {
+        "input": [
+          {
+            "mode": "debug",
+            "user": "admin"
+          }
+        ],
+        "expected": ["mode=debug", "user=admin"]
+      }
+    ],
+    "starter_code": "def log_values(**kwargs):\n    # Build a list like [\"key=value\", ...] from kwargs\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q15",
+    "type": "code",
+    "function_name": "square_list",
+    "question": "Write a function called `square_list` that takes a list of numbers and returns a new list where each number is squared. You may use a loop or a lambda with map.",
+    "test_cases": [
+      {
+        "input": [[1, 2, 3]],
+        "expected": [1, 4, 9]
+      },
+      {
+        "input": [[-1, 0, 2]],
+        "expected": [1, 0, 4]
+      }
+    ],
+    "starter_code": "def square_list(nums):\n    # Return a new list with each number squared\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q16",
+    "type": "code",
+    "function_name": "append_marker",
+    "question": "Write a function called `append_marker` that takes a list `values`, appends the string \"END\" to it, and returns the list. This shows how a mutable list can be changed inside a function.",
+    "test_cases": [
+      {
+        "input": [[1, 2]],
+        "expected": [1, 2, "END"]
+      },
+      {
+        "input": [["a"]],
+        "expected": ["a", "END"]
+      }
+    ],
+    "starter_code": "def append_marker(values):\n    # Append \"END\" to the list and return it\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q17",
+    "type": "code",
+    "function_name": "make_greeter",
+    "question": "Write a function called `make_greeter` that takes a `prefix` string and returns an inner function `greet(name)` which returns `\"{prefix} {name}\"`. Use a nested (inner) function.",
+    "test_cases": [
+      {
+        "input": ["Hi", "Sam"],
+        "expected": "Hi Sam"
+      },
+      {
+        "input": ["Hello", "World"],
+        "expected": "Hello World"
+      }
+    ],
+    "starter_code": "def make_greeter(prefix):\n    # Define an inner function greet(name) and return it\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q18",
+    "type": "code",
+    "function_name": "factorial",
+    "question": "Write a recursive function called `factorial` that takes a non-negative integer `n` and returns `n!`. Use the base case `factorial(0) == 1`.",
+    "test_cases": [
+      {
+        "input": [0],
+        "expected": 1
+      },
+      {
+        "input": [4],
+        "expected": 24
+      }
+    ],
+    "starter_code": "def factorial(n):\n    # Use recursion and a base case for n == 0\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q19",
+    "type": "code",
+    "function_name": "first_non_empty",
+    "question": "Write a function called `first_non_empty` that takes a list of strings and returns the first non-empty string. If they are all empty, return None.",
+    "test_cases": [
+      {
+        "input": [["", "", "hi"]],
+        "expected": "hi"
+      },
+      {
+        "input": [["", ""]],
+        "expected": null
+      }
+    ],
+    "starter_code": "def first_non_empty(strings):\n    # Return the first non-empty string or None\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q20",
+    "type": "code",
+    "function_name": "double_recursive",
+    "question": "Write a recursive function called `double_recursive` that takes a non-negative integer `n`. If `n` is 0, return 1. Otherwise, return `2 * double_recursive(n - 1)`.",
+    "test_cases": [
+      {
+        "input": [0],
+        "expected": 1
+      },
+      {
+        "input": [3],
+        "expected": 8
+      }
+    ],
+    "starter_code": "def double_recursive(n):\n    # Use recursion with base case n == 0\n    pass",
+    "difficulty": 5
+  }
+]

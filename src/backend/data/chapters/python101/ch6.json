@@ -1,0 +1,494 @@
+[
+  {
+    "id": "q1",
+    "type": "multiple_choice",
+    "question": "Which keyword is used to start a conditional control flow block in Python?",
+    "options": ["when", "if", "case"],
+    "answer": "if",
+    "difficulty": 1
+  },
+  {
+    "id": "q2",
+    "type": "multiple_choice",
+    "question": "Which keywords are commonly used together to handle multiple branches of a decision?",
+    "options": [
+      "if, elif, else",
+      "if, then, else",
+      "when, elif, end"
+    ],
+    "answer": "if, elif, else",
+    "difficulty": 1
+  },
+  {
+    "id": "q3",
+    "type": "multiple_choice",
+    "question": "What is the output of the following code?\n\nx = 5\nif x > 3:\n    print('A')\nelse:\n    print('B')",
+    "options": ["A", "B", "No output"],
+    "answer": "A",
+    "difficulty": 1
+  },
+  {
+    "id": "q4",
+    "type": "multiple_choice",
+    "question": "What is the output of the following code?\n\nx = 2\nif x > 3:\n    print('A')\nelif x == 2:\n    print('B')\nelse:\n    print('C')",
+    "options": ["A", "B", "C"],
+    "answer": "B",
+    "difficulty": 2
+  },
+  {
+    "id": "q5",
+    "type": "multiple_choice",
+    "question": "Which loop in Python repeats a block of code a fixed number of times when iterating over a sequence?",
+    "options": ["repeat loop", "for loop", "while loop"],
+    "answer": "for loop",
+    "difficulty": 1
+  },
+  {
+    "id": "q6",
+    "type": "multiple_choice",
+    "question": "Which loop should you normally use if you want to keep looping WHILE some condition remains True?",
+    "options": ["for loop", "while loop", "do loop"],
+    "answer": "while loop",
+    "difficulty": 1
+  },
+  {
+    "id": "q7",
+    "type": "multiple_choice",
+    "question": "What is the output of the following code?\n\nfor i in range(3):\n    print(i)\n",
+    "options": [
+      "1 2 3",
+      "0 1 2",
+      "0 1 2 3"
+    ],
+    "answer": "0 1 2",
+    "difficulty": 2
+  },
+  {
+    "id": "q8",
+    "type": "multiple_choice",
+    "question": "What does the `break` statement do inside a loop?",
+    "options": [
+      "Skips the current iteration and continues with the next one",
+      "Stops the loop immediately",
+      "Restarts the loop from the beginning"
+    ],
+    "answer": "Stops the loop immediately",
+    "difficulty": 2
+  },
+  {
+    "id": "q9",
+    "type": "multiple_choice",
+    "question": "What does the `continue` statement do inside a loop?",
+    "options": [
+      "Skips the rest of the current iteration and moves to the next one",
+      "Stops the loop immediately",
+      "Skips the next iteration"
+    ],
+    "answer": "Skips the rest of the current iteration and moves to the next one",
+    "difficulty": 2
+  },
+  {
+    "id": "q10",
+    "type": "multiple_choice",
+    "question": "What is the output of the following code?\n\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)",
+    "options": [
+      "0 1 2 3 4",
+      "0 1 2",
+      "3 4"
+    ],
+    "answer": "0 1 2",
+    "difficulty": 3
+  },
+  {
+    "id": "q11",
+    "type": "multiple_choice",
+    "question": "What is the output of the following code?\n\nfor i in range(5):\n    if i % 2 == 0:\n        continue\n    print(i)",
+    "options": [
+      "0 2 4",
+      "1 3",
+      "1 2 3 4"
+    ],
+    "answer": "1 3",
+    "difficulty": 3
+  },
+  {
+    "id": "q12",
+    "type": "multiple_choice",
+    "question": "Which of the following best describes an infinite loop?",
+    "options": [
+      "A loop that never runs",
+      "A loop that runs a fixed number of times",
+      "A loop whose condition never becomes False"
+    ],
+    "answer": "A loop whose condition never becomes False",
+    "difficulty": 2
+  },
+  {
+    "id": "q13",
+    "type": "multiple_choice",
+    "question": "What is wrong with this code?\n\nwhile True:\n    x = 1",
+    "options": [
+      "Syntax error",
+      "It creates an infinite loop",
+      "Nothing, it is normal and will exit automatically"
+    ],
+    "answer": "It creates an infinite loop",
+    "difficulty": 2
+  },
+  {
+    "id": "q14",
+    "type": "multiple_choice",
+    "question": "In Python, the `else` clause can be used with which control flow constructs?",
+    "options": [
+      "Only `if`",
+      "`if`, `for`, and `while`",
+      "Only `while`"
+    ],
+    "answer": "`if`, `for`, and `while`",
+    "difficulty": 5
+  },
+  {
+    "id": "q15",
+    "type": "multiple_choice",
+    "question": "What is the output of this code?\n\nfor i in range(3):\n    pass\nprint('Done')",
+    "options": ["0 1 2 Done", "Done", "No output"],
+    "answer": "Done",
+    "difficulty": 3
+  },
+  {
+    "id": "q16",
+    "type": "multiple_choice",
+    "question": "What is the main purpose of the `pass` statement in control flow?",
+    "options": [
+      "To terminate the loop",
+      "To do nothing and act as a placeholder",
+      "To skip to the next iteration"
+    ],
+    "answer": "To do nothing and act as a placeholder",
+    "difficulty": 3
+  },
+  {
+    "id": "q17",
+    "type": "multiple_choice",
+    "question": "Consider the code:\n\nx = 10\nif x > 5:\n    print('Big')\nprint('Done')\n\nWhat is printed?",
+    "options": [
+      "Big",
+      "Done",
+      "Big\nDone"
+    ],
+    "answer": "Big\nDone",
+    "difficulty": 2
+  },
+  {
+    "id": "q18",
+    "type": "multiple_choice",
+    "question": "What is the output of the following code?\n\nx = 0\nwhile x < 3:\n    x += 1\nprint(x)",
+    "options": ["0", "2", "3"],
+    "answer": "3",
+    "difficulty": 3
+  },
+  {
+    "id": "q19",
+    "type": "multiple_choice",
+    "question": "What is the output of the following code?\n\nfor ch in 'hi':\n    print(ch)",
+    "options": [
+      "hi",
+      "h i",
+      "h\ni"
+    ],
+    "answer": "h\ni",
+    "difficulty": 2
+  },
+  {
+    "id": "q20",
+    "type": "multiple_choice",
+    "question": "Choose the correct syntax for a basic while loop:",
+    "options": [
+      "while (x < 10)\n    print(x)",
+      "while x < 10:\n    print(x)",
+      "while x < 10 then\n    print(x)"
+    ],
+    "answer": "while x < 10:\n    print(x)",
+    "difficulty": 2
+  },
+  {
+    "id": "q21",
+    "type": "multiple_choice",
+    "question": "What is the output of this code?\n\nfor i in range(3):\n    for j in range(2):\n        print(i, j)",
+    "options": [
+      "0 0\n1 0\n2 0",
+      "0 0\n0 1\n1 0\n1 1\n2 0\n2 1",
+      "0 0\n1 1\n2 2"
+    ],
+    "answer": "0 0\n0 1\n1 0\n1 1\n2 0\n2 1",
+    "difficulty": 4
+  },
+  {
+    "id": "q22",
+    "type": "multiple_choice",
+    "question": "What is the output of this code?\n\nfor i in range(3):\n    if i == 1:\n        continue\n    print(i)",
+    "options": ["0 1 2", "0 2", "1"],
+    "answer": "0 2",
+    "difficulty": 3
+  },
+  {
+    "id": "q23",
+    "type": "multiple_choice",
+    "question": "Which of these is the best description of control flow in a program?",
+    "options": [
+      "The order in which variables are declared",
+      "The order in which statements are executed",
+      "The way data is stored on disk"
+    ],
+    "answer": "The order in which statements are executed",
+    "difficulty": 1
+  },
+  {
+    "id": "q24",
+    "type": "multiple_choice",
+    "question": "What is the output of this code?\n\nx = 3\nif x > 5:\n    print('A')\nelif x > 2:\n    print('B')\nelif x > 1:\n    print('C')\nelse:\n    print('D')",
+    "options": ["A", "B", "C", "D"],
+    "answer": "B",
+    "difficulty": 3
+  },
+  {
+    "id": "q25",
+    "type": "multiple_choice",
+    "question": "What is the effect of this code on variable `total`?\n\ntotal = 0\nfor i in range(1, 4):\n    total += i\n",
+    "options": ["total becomes 3", "total becomes 6", "total becomes 10"],
+    "answer": "total becomes 6",
+    "difficulty": 3
+  },
+  {
+    "id": "q26",
+    "type": "multiple_choice",
+    "question": "Which control flow construct is most appropriate for choosing one of several mutually exclusive options?",
+    "options": [
+      "Multiple `if` statements with no `elif`",
+      "A single `if`/`elif`/`else` chain",
+      "An infinite loop with `break`"
+    ],
+    "answer": "A single `if`/`elif`/`else` chain",
+    "difficulty": 4
+  },
+  {
+    "id": "q27",
+    "type": "multiple_choice",
+    "question": "Which built-in function is often used with `for` loops to generate a sequence of numbers?",
+    "options": ["range", "numbers", "seq"],
+    "answer": "range",
+    "difficulty": 1
+  },
+  {
+    "id": "q28",
+    "type": "multiple_choice",
+    "question": "What is the output of this code?\n\nfor i in range(2):\n    for j in range(2):\n        if i == j:\n            print('X')",
+    "options": ["X\nX", "X", "No output"],
+    "answer": "X\nX",
+    "difficulty": 4
+  },
+  {
+    "id": "q29",
+    "type": "multiple_choice",
+    "question": "What is the output of this code?\n\nfor i in range(3):\n    if i == 1:\n        break\n    print('Loop')",
+    "options": ["Loop\nLoop\nLoop", "Loop\nLoop", "Loop"],
+    "answer": "Loop",
+    "difficulty": 3
+  },
+  {
+    "id": "q30",
+    "type": "multiple_choice",
+    "question": "Which of the following is TRUE about `for` loops in Python?",
+    "options": [
+      "`for` loops only work with integers",
+      "`for` loops can iterate over any iterable object",
+      "`for` loops always require an index variable named `i`"
+    ],
+    "answer": "`for` loops can iterate over any iterable object",
+    "difficulty": 4
+  },
+  {
+    "id": "q31",
+    "type": "code",
+    "function_name": "max_of_two",
+    "question": "Write a function called `max_of_two` that takes two numbers `a` and `b` and returns the larger one using an `if` statement.",
+    "test_cases": [
+      {
+        "input": [3, 5],
+        "expected": 5
+      },
+      {
+        "input": [10, 2],
+        "expected": 10
+      }
+    ],
+    "starter_code": "def max_of_two(a, b):\n    # Write your code here using if/else\n    pass",
+    "difficulty": 2
+  },
+  {
+    "id": "q32",
+    "type": "code",
+    "function_name": "sign_label",
+    "question": "Write a function called `sign_label` that takes an integer `n` and returns 'positive' if n > 0, 'negative' if n < 0, and 'zero' if n == 0.",
+    "test_cases": [
+      {
+        "input": [5],
+        "expected": "positive"
+      },
+      {
+        "input": [-2],
+        "expected": "negative"
+      },
+      {
+        "input": [0],
+        "expected": "zero"
+      }
+    ],
+    "starter_code": "def sign_label(n):\n    # Use if/elif/else\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q33",
+    "type": "code",
+    "function_name": "sum_to_n",
+    "question": "Write a function called `sum_to_n` that takes a positive integer `n` and returns the sum of the integers from 1 to n (inclusive) using a `for` loop.",
+    "test_cases": [
+      {
+        "input": [3],
+        "expected": 6
+      },
+      {
+        "input": [1],
+        "expected": 1
+      }
+    ],
+    "starter_code": "def sum_to_n(n):\n    # Use a for loop to accumulate the sum\n    pass",
+    "difficulty": 3
+  },
+  {
+    "id": "q34",
+    "type": "code",
+    "function_name": "count_evens",
+    "question": "Write a function called `count_evens` that takes a list of integers and returns how many of them are even. Use a `for` loop and an `if` statement.",
+    "test_cases": [
+      {
+        "input": [[1, 2, 3, 4]],
+        "expected": 2
+      },
+      {
+        "input": [[2, 2, 2]],
+        "expected": 3
+      }
+    ],
+    "starter_code": "def count_evens(nums):\n    # Use for and if\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q35",
+    "type": "code",
+    "function_name": "first_positive",
+    "question": "Write a function called `first_positive` that takes a list of integers and returns the first positive number it finds. If there is no positive number, return None. Use a loop and `break`.",
+    "test_cases": [
+      {
+        "input": [[-1, -2, 3, 4]],
+        "expected": 3
+      },
+      {
+        "input": [[-5, -1]],
+        "expected": null
+      }
+    ],
+    "starter_code": "def first_positive(nums):\n    # Use a loop and break\n    pass",
+    "difficulty": 5
+  },
+  {
+    "id": "q36",
+    "type": "code",
+    "function_name": "filter_non_negative",
+    "question": "Write a function called `filter_non_negative` that takes a list of integers and returns a new list containing only the numbers that are >= 0. Use a `for` loop and `if`.",
+    "test_cases": [
+      {
+        "input": [[-1, 0, 5, -3]],
+        "expected": [0, 5]
+      },
+      {
+        "input": [[1, 2, 3]],
+        "expected": [1, 2, 3]
+      }
+    ],
+    "starter_code": "def filter_non_negative(nums):\n    # Build a new list using for and if\n    pass",
+    "difficulty": 4
+  },
+  {
+    "id": "q37",
+    "type": "code",
+    "function_name": "repeat_until_limit",
+    "question": "Write a function called `repeat_until_limit` that takes a starting integer `start` and a limit `limit`. Using a `while` loop, keep doubling `start` until it is greater than or equal to `limit`, then return the final value.",
+    "test_cases": [
+      {
+        "input": [1, 10],
+        "expected": 16
+      },
+      {
+        "input": [5, 5],
+        "expected": 5
+      }
+    ],
+    "starter_code": "def repeat_until_limit(start, limit):\n    # Use a while loop to keep doubling\n    pass",
+    "difficulty": 5
+  },
+  {
+    "id": "q38",
+    "type": "code",
+    "function_name": "has_value",
+    "question": "Write a function called `has_value` that takes a list `items` and a value `target`. Use a loop and `if` to return True if `target` appears in `items`, otherwise return False (do not use the `in` operator).",
+    "test_cases": [
+      {
+        "input": [[1, 2, 3], 2],
+        "expected": true
+      },
+      {
+        "input": [[1, 2, 3], 4],
+        "expected": false
+      }
+    ],
+    "starter_code": "def has_value(items, target):\n    # Use a loop and if (no `in`)\n    pass",
+    "difficulty": 5
+  },
+  {
+    "id": "q39",
+    "type": "code",
+    "function_name": "all_positive",
+    "question": "Write a function called `all_positive` that takes a list of integers and returns True if all numbers are > 0, otherwise returns False. Use a loop and `if` with early exit (e.g., `break` or `return`).",
+    "test_cases": [
+      {
+        "input": [[1, 2, 3]],
+        "expected": true
+      },
+      {
+        "input": [[1, -1, 2]],
+        "expected": false
+      }
+    ],
+    "starter_code": "def all_positive(nums):\n    # Use a loop and if with early return\n    pass",
+    "difficulty": 5
+  },
+  {
+    "id": "q40",
+    "type": "code",
+    "function_name": "triangle_pattern",
+    "question": "Write a function called `triangle_pattern` that takes an integer `n` and returns a string representing a right triangle made of '*' characters, using control flow and loops.\nFor example, triangle_pattern(3) should return:\n\"*\\n**\\n***\"",
+    "test_cases": [
+      {
+        "input": [3],
+        "expected": "*\n**\n***"
+      },
+      {
+        "input": [1],
+        "expected": "*"
+      }
+    ],
+    "starter_code": "def triangle_pattern(n):\n    # Use loops and control flow to build the pattern\n    pass",
+    "difficulty": 5
+  }
+]
